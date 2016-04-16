@@ -26,5 +26,9 @@ void setup() {
 void loop() {
     // put your main code here, to run repeatedly:
     eventManager.processEvent();
+    
+    if (millis() > 6000 && millis() < 7000) {
+        eventManager.queueEvent(GPS_STATUS_CHANGED, 1);
+    }
     yield();
 }
