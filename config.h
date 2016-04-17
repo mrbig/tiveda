@@ -17,3 +17,6 @@
 // Custom events
 #define GPS_STATUS_CHANGED EventManager::kEventUser1
 
+// New message is available
+#define GPS_MESSAGE_RECEIVED EventManager::kEventUser2
+
