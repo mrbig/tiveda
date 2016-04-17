@@ -20,3 +20,6 @@
 // New message is available
 #define GPS_MESSAGE_RECEIVED EventManager::kEventUser2
 
+// GPS coordinates have been updated
+#define GPS_UPDATED EventManager::kEventUser3
+

@@ -26,8 +26,10 @@ void GPS::handleMessage(int eventCode, int eventParam) {
         return;
     }
     if (message->startsWith("$GPRMC,")) {
+#ifdef DEBUG
         Serial.print("> ");
         Serial.println(*message);
+#endif
         parseRMC(message);
     }
 }
@@ -98,6 +100,11 @@ void GPS::parseRMC(String* msg) {
         fieldNr++;
     }
 
+    if (reception) {
+        eventManager->queueEvent(GPS_UPDATED, 0);
+    }
+
+#ifdef DEBUG
     Serial.print("Lat: ");
     Serial.println(last.lat,6);
     Serial.print("Lng: ");
@@ -106,6 +113,7 @@ void GPS::parseRMC(String* msg) {
     Serial.println(last.spd);
     Serial.print("HDG: ");
     Serial.println(last.hdg);
+#endif
 }
 
 /**
