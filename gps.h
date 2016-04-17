@@ -27,6 +27,11 @@ class GPS {
         // Reference to the message buffer
         static String* message;
 
+        /**
+         * Calculate the checksum of the NMEA sentence
+         */
+        static byte calculateChecksum();
+
 };
 
 #endif
