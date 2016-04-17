@@ -19,7 +19,9 @@ EventManager* GPS::eventManager;
 void GPS::handleMessage(int eventCode, int eventParam) {
     if (!calculateChecksum()) {
 #ifdef DEBUG
-        Serial.print("Checksum error");
+        Serial.print("X ");
+        Serial.print(*message);
+        Serial.println("Checksum error");
 #endif
         return;
     }
@@ -136,6 +138,7 @@ float GPS::toCoordinates(float coord, char indicator) {
 byte GPS::calculateChecksum() {
     byte i, last;
     uint16_t checksum;
+    String strChecksum;
 
     last = message->lastIndexOf('*');
     if (last < 0) return 0;
@@ -144,7 +147,12 @@ byte GPS::calculateChecksum() {
     for (i=1; i<last; i++) {
         checksum = checksum ^ message->charAt(i);
     }
+    strChecksum = String(checksum, HEX);
+    strChecksum.toUpperCase();
+    if (checksum < 16) {
+        strChecksum = "0" + strChecksum;
+    }
     
-    return message->substring(last + 1, message->length()-1) == String(checksum, HEX);
+    return message->substring(last + 1, last + 3) == strChecksum;
 }
 
