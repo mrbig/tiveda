@@ -9,6 +9,10 @@
 #include "statusled.h"
 #endif
 
+#ifdef ENABLE_ALERTLED
+#include "alertled.h"
+#endif
+
 EventManager eventManager;
 
 // Buffer to collect incoming data on serial
@@ -23,6 +27,8 @@ POI* pois;
 // Number of the pois
 uint8_t poiCount;
 
+// Set to true when we're in an alert
+boolean inAlert = false;
 
 void setup() {
     // put your setup code here, to run once:
@@ -37,6 +43,9 @@ void setup() {
 
 #ifdef ENABLE_STATUSLED
     StatusLED::init(&eventManager);
+#endif
+#ifdef ENABLE_ALERTLED
+    AlertLED::init(&eventManager);
 #endif
 
     eventManager.queueEvent(GPS_STATUS_CHANGED, 0);
@@ -106,6 +115,7 @@ void checkPois(int eventCode, int eventParam) {
     uint8_t i;
     GPSSTATUS* current;
     float diff;
+    boolean alertFound = false;
 #ifdef DEBUG
     unsigned long start = micros();
 #endif
@@ -115,6 +125,7 @@ void checkPois(int eventCode, int eventParam) {
     for (i=0; i<poiCount; i++){
         if (!pois[i].checkPointInside(current->lat, current->lng)) continue;
 
+        // check heading
         if (pois[i].heading > -0.5) {
             diff = abs(pois[i].heading - current->hdg);
             if (diff > 180) {
@@ -124,11 +135,12 @@ void checkPois(int eventCode, int eventParam) {
             if (diff > CFG_HDG_TOLERANCE) continue;
         }
 
-        eventManager.queueEvent(ALERT_CHANGED, abs(current->spd - pois[i].limit));
-#ifdef DEBUG
-//        Serial.print("Matched poi #");
-//        Serial.println(i);
-#endif
+        // We trigger this each time, becouse the speed varies
+        eventManager.queueEvent(ALERT_TRIGGERED, current->spd - pois[i].limit);
+        alertFound = inAlert = true;
+    }
+    if (inAlert && !alertFound) {
+        eventManager.queueEvent(ALERT_RESET, 0);
     }
 #ifdef DEBUG
     unsigned long finish = micros();

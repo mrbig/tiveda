@@ -4,9 +4,13 @@
 
 // Enable / disabled modules
 #define ENABLE_STATUSLED 1
+#define ENABLE_ALERTLED 1
 
 // GPIO port of the status led
 #define CFG_LED_STATUS 2
+
+// GPIO port of the alert led
+#define CFG_LED_ALERT1 14
 
 // GPIO port of the debug button
 #define CFG_BTN 0
@@ -25,5 +29,8 @@
 
 // Alert status has been changed
 // Message parameter is the difference between the current speed and the speed limit
-#define ALERT_CHANGED EventManager::kEventUser4
+#define ALERT_TRIGGERED EventManager::kEventUser4
+
+// Alert is gone
+#define ALERT_RESET EventManager::kEventUser5
 
