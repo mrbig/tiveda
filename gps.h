@@ -36,6 +36,11 @@ class GPS {
          */
         static void handleMessage(int eventCode, int eventParam);
 
+        /**
+         * Return the current gps data
+         */
+        static GPSSTATUS* getCurrent() {return &last;}
+
 
     protected:
         // Reference to the message buffer
