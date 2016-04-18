@@ -23,3 +23,7 @@
 // GPS coordinates have been updated
 #define GPS_UPDATED EventManager::kEventUser3
 
+// Alert status has been changed
+// Message parameter is the difference between the current speed and the speed limit
+#define ALERT_CHANGED EventManager::kEventUser4
+

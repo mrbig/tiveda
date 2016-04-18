@@ -105,15 +105,38 @@ void serialEvent() {
 void checkPois(int eventCode, int eventParam) {
     uint8_t i;
     GPSSTATUS* current;
+    float diff;
+#ifdef DEBUG
+    unsigned long start = micros();
+#endif
+    
     current = GPS::getCurrent();
     
     for (i=0; i<poiCount; i++){
-        if (pois[i].checkPointInside(current->lat, current->lng)) {
-            Serial.print("Matched poi #");
-            Serial.println(i);
+        if (!pois[i].checkPointInside(current->lat, current->lng)) continue;
+
+        if (pois[i].heading > -0.5) {
+            diff = abs(pois[i].heading - current->hdg);
+            if (diff > 180) {
+                diff = abs(diff - 360);
+            }
+
+            if (diff > CFG_HDG_TOLERANCE) continue;
         }
+
+        eventManager.queueEvent(ALERT_CHANGED, abs(current->spd - pois[i].limit));
+#ifdef DEBUG
+//        Serial.print("Matched poi #");
+//        Serial.println(i);
+#endif
     }
+#ifdef DEBUG
+    unsigned long finish = micros();
+    Serial.print("Took: ");
+    Serial.print((finish - start));
+    Serial.print("us ");
     Serial.print("Free heep: ");
     Serial.println(ESP.getFreeHeap());
+#endif;
 }
 
