@@ -1,0 +1,3435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Veda</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin60">
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin60</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1-77-highlight">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin70">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7fffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="line-000000-1-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+	</Style>
+	<StyleMap id="poly-000000-1-77">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1-77-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1-77-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl40">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin4">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="line-000000-1-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1-77-normal">
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="line-000000-1-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-000000-1-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-000000-1-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin71">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Budapest</name>
+		<Placemark>
+			<name>M5 bevezeto</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.1286651695078,47.44526978881045,0 19.12374733397286,47.44853690523567,0 19.12349501987807,47.44839117431809,0 19.12844538523199,47.44508698943662,0 19.1286651695078,47.44526978881045,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M5 kivezeto</name>
+			<description>limit: 70</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.12944429580335,47.44432925540509,0 19.1348010027782,47.4409307675801,0 19.1349589518496,47.44105552698326,0 19.12959762774443,47.44447153051098,0 19.12944429580335,47.44432925540509,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M3 bevezeto</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin8</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							19.1219669,47.5495981,0 19.1221708,47.5494605,0 19.1260117,47.5523425,0 19.1257757,47.55249460000001,0 19.1219669,47.5495981,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M3 kivezeto</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin8</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							19.1176808,47.54607500000002,0 19.1178417,47.5459229,0 19.1222835,47.5492976,0 19.1220474,47.5494351,0 19.1176808,47.54607500000002,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M3 bevezeto</name>
+			<styleUrl>#line-000000-1-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.123823,47.55118719999999,0 19.1223103,47.5500069,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M3 kivezeto</name>
+			<styleUrl>#line-000000-1-nodesc</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.1202825,47.5476389,0 19.1220474,47.5489822,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>teszt</name>
+			<description>limit: 20</description>
+			<styleUrl>#poly-000000-1-77</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							19.257617,47.5580771,0 19.2570215,47.5576246,0 19.2574614,47.557335,0 19.2576277,47.55744720000001,0 19.2573166,47.5576282,0 19.2577779,47.5579721,0 19.257617,47.5580771,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M5 kivezeto</name>
+			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.12943716423076,47.44443501169279,0 19.13501800276211,47.44089745210579,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M5 bevezeto</name>
+			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.128609727204,47.44507805879452,0 19.1235604109179,47.44855232213853,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 bevezeto</name>
+			<description>limit: 100</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.98907194442085,47.45907835215494,0 18.98920701504363,47.45880076355748,0 18.99894940182314,47.46037458879794,0 18.99883053284921,47.46065748743782,0 18.98907194442085,47.45907835215494,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 bevezeto</name>
+			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.98910490845729,47.45893795096755,0 18.99891523096509,47.4605633241417,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 kivezeto</name>
+			<description>limit: 100</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.99847453394935,47.46048767595119,0 19.00584380186102,47.46168949559874,0 19.00561818840793,47.46210740544852,0 19.0016724946035,47.46123706948727,0 18.99836876159234,47.46073386460704,0 18.99847453394935,47.46048767595119,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 kivezeto</name>
+			<styleUrl>#m_ylw-pushpin000</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.00573453228105,47.46199758955981,0 18.99844258352221,47.46062177766112,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Baranya</name>
+		<Placemark>
+			<name>Szigetvar</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.82246190076556,46.04885262585802,0 17.8224892816548,46.04861404400666,0 17.83482664469147,46.04919692978945,0 17.8348071248475,46.04947979080729,0 17.82246190076556,46.04885262585802,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Mecseknadasd</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.47605249253628,46.22842867457337,0 18.46842484620272,46.22388678162748,0 18.46542278970506,46.22288935454579,0 18.46569392563672,46.222605437364,0 18.46878872669372,46.22365289960594,0 18.47631693603165,46.22822020599073,0 18.47605249253628,46.22842867457337,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szigetvar2</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.81500180481905,46.07666397926188,0 17.81298917987317,46.0672600983805,0 17.81371364235418,46.06712030719612,0 17.81578348655745,46.07659214150708,0 17.81500180481905,46.07666397926188,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sasd</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.10680385250062,46.25260852651406,0 18.11358929134933,46.25178317233564,0 18.11690855942992,46.25074188946499,0 18.11720165607746,46.25099714841619,0 18.11369826359437,46.2520091788366,0 18.10674451752179,46.25295440597347,0 18.10680385250062,46.25260852651406,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Pecs</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.26435990813516,46.0835027426694,0 18.27578492832369,46.08736004460336,0 18.27560051915071,46.08767630880497,0 18.2640654583012,46.08387343029838,0 18.26435990813516,46.0835027426694,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kozarmisleny</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.2798210048053,46.05474162825143,0 18.28679360349155,46.05453540213174,0 18.29288079543104,46.05339157153306,0 18.29300833067848,46.05493879095808,0 18.27979715933572,46.05500730341225,0 18.2798210048053,46.05474162825143,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Bacs Kiskun</name>
+		<Placemark>
+			<name>Kecskemet</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.66410124048259,46.92885343406423,0 19.66598589532745,46.92694677583829,0 19.67165429476379,46.92488607575381,0 19.67182869373291,46.92519325827327,0 19.66644908066581,46.92728021068148,0 19.6647177885216,46.92896203949718,0 19.66410124048259,46.92885343406423,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Baja1</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.9533539395447,46.18573035692837,0 18.95351088280271,46.18669452338114,0 18.950621570582,46.19055608691885,0 18.95011635347885,46.19039921780181,0 18.95300837519073,46.18663299303466,0 18.95293206687835,46.18580458338003,0 18.9533539395447,46.18573035692837,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Baja2</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.97644468350515,46.18460408617856,0 18.9691742362963,46.18460892553898,0 18.96552633159301,46.18533939324331,0 18.96546766551094,46.18496747562514,0 18.96907559698337,46.18430381754509,0 18.97650045714468,46.18435457670277,0 18.97644468350515,46.18460408617856,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kiskoros</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.27815816458109,46.6217946329425,0 19.27294510054382,46.62660853052273,0 19.27249287119272,46.62639334922749,0 19.27781213652652,46.62161869855844,0 19.27815816458109,46.6217946329425,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Apostag1</name>
+			<description>limit: 60</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.98297047128006,46.89241062512514,0 18.98485229862958,46.89659899141591,0 18.98363547536121,46.89677253469489,0 18.98233763565404,46.89241059953635,0 18.98297047128006,46.89241062512514,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Apostag1</name>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.98267260817931,46.89235301626124,0 18.98452836482481,46.89670893226081,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Apostag2</name>
+			<description>limit: 60</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.98468920834106,46.8962449783769,0 18.98811357665802,46.90039864380065,0 18.98740207175923,46.90067496782315,0 18.98386254049888,46.8963941126218,0 18.98468920834106,46.8962449783769,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Apostag2</name>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.98781403370518,46.90059760084612,0 18.98432457715515,46.89639427649032,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Kiskunhalas</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.49885570347073,46.42145156908153,0 19.49266187409504,46.42730051712052,0 19.4922604271797,46.42708277979214,0 19.49756893349055,46.42211454610189,0 19.49798211183453,46.42133857491792,0 19.49885570347073,46.42145156908153,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Fulopszallas</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.26942233844892,46.84038441696905,0 19.29178616773337,46.84464732093871,0 19.29161809958712,46.84514276538517,0 19.26901868610344,46.84100350085315,0 19.26942233844892,46.84038441696905,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Bekes</name>
+		<Placemark>
+			<name>Bekescsaba1A</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.1758074858443,46.67193697526468,0 21.18052583255828,46.67175955778492,0 21.18205518333594,46.67137416368196,0 21.18221683273273,46.6720267520112,0 21.17583704928377,46.67223588069,0 21.1758074858443,46.67193697526468,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bekescsaba1A</name>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					21.18215509213705,46.67144278756581,0 21.17577492974977,46.67207095367421,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Bekescsaba1B</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.16985729519002,46.67301637667072,0 21.176404653418,46.67184720209126,0 21.17649185383967,46.67216652194104,0 21.17257588714605,46.67310684161956,0 21.16980054949348,46.67327535477958,0 21.16985729519002,46.67301637667072,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bekescsaba1B</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					21.16977042725106,46.67317977075303,0 21.17647796087916,46.67199683873437,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Bekescsaba2</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.12469752546928,46.69227535494322,0 21.11722923526606,46.69928675157371,0 21.11663105470634,46.69919281991892,0 21.12432340417507,46.69206074586391,0 21.12469752546928,46.69227535494322,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kardos</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.72230121441912,46.79600719255605,0 20.7226902122529,46.79638887552192,0 20.71167453935638,46.80145193868405,0 20.71125910457843,46.80106086102425,0 20.72230121441912,46.79600719255605,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Korosladany</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.08879463203423,46.97950136012912,0 21.08865047809872,46.9708374075077,0 21.08908216471459,46.97083308403747,0 21.0893612442425,46.97947906596701,0 21.08879463203423,46.97950136012912,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Oroshaza</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.66622965546848,46.56374205157786,0 20.67042544802874,46.5665565394251,0 20.6724389320281,46.56692114608952,0 20.67239690454535,46.56716629271697,0 20.67028415763397,46.56686093405644,0 20.6659592682879,46.5639024063108,0 20.66622965546848,46.56374205157786,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Csardaszallas</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.92488243898469,46.86668611139572,0 20.94224160020949,46.85855083048671,0 20.94270236128264,46.8588786575778,0 20.92528480387971,46.8672095843056,0 20.92488243898469,46.86668611139572,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Borsod</name>
+		<Placemark>
+			<name>Malyi</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.8237275890323,48.01378486313665,0 20.8280715589414,48.00641052453632,0 20.82845149263366,48.00655268466212,0 20.82415938709761,48.01389358584429,0 20.8237275890323,48.01378486313665,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bukkabrany</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.68603113675081,47.88961735670253,0 20.68467645324395,47.88828316081438,0 20.68087250705835,47.88634952741275,0 20.67988615504992,47.88499608095441,0 20.68029397209349,47.88496571127354,0 20.68140548402118,47.8862594140382,0 20.68502585800803,47.88806109673028,0 20.6864228553566,47.88951581548832,0 20.68603113675081,47.88961735670253,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Edeleny</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.74430223052666,48.29778490924982,0 20.74712458675252,48.30331836416617,0 20.74663814375655,48.30348318141207,0 20.74393821678028,48.29778337796489,0 20.74430223052666,48.29778490924982,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Mezokereszt M3 bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.74662870803459,47.84859407805087,0 20.75148556226299,47.85496000610839,0 20.75048623223733,47.85525317837879,0 20.74575678823058,47.84879300838373,0 20.74662870803459,47.84859407805087,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Mezokereszt M3 bal</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.75121266737185,47.85512978053189,0 20.74621693698565,47.84880347874372,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Mezokereszt M3 jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.7459329726585,47.84903496744601,0 20.74322330623774,47.84214579427459,0 20.74362493959558,47.84201920363896,0 20.74675727937201,47.84890533656819,0 20.7459329726585,47.84903496744601,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Mezokereszt M3 jobb</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.743361745002,47.84201733724313,0 20.74627850249554,47.84861514120303,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc 26 del</name>
+			<description>limit: 60</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.75689058517077,48.18355348682853,0 20.76003308025209,48.17841515427295,0 20.76131346945993,48.17854895061327,0 20.75759569559514,48.18370876923103,0 20.75689058517077,48.18355348682853,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc 26 del</name>
+			<styleUrl>#m_ylw-pushpin4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.76043948387995,48.17826867551468,0 20.75723200574792,48.1835834222505,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc 26 eszak</name>
+			<description>limit: 60</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.75270580200887,48.18844226342374,0 20.75707774082925,48.18332184471341,0 20.75750757958622,48.18347536890655,0 20.75329605022633,48.18858221608897,0 20.75270580200887,48.18844226342374,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc 26 eszak</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.75292496802367,48.18864684877055,0 20.75698967463858,48.18354308271177,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc szp A</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.78795209442189,48.11021304334023,0 20.78824157282551,48.10800556303183,0 20.78987745677852,48.10602286124668,0 20.79033888872254,48.10625727164133,0 20.78886565512201,48.1082106763124,0 20.78844241284396,48.11021630086686,0 20.78795209442189,48.11021304334023,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc szp A</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.7878527421733,48.11001726536568,0 20.7899999712932,48.10616558895744,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc szp B</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.7864852710845,48.1072522449556,0 20.7896980561996,48.10632367631903,0 20.78992194023551,48.10670395779126,0 20.78650995134469,48.10748257959002,0 20.7864852710845,48.1072522449556,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc szp C</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.78936228954513,48.10677645788034,0 20.79115307511629,48.10431226720711,0 20.79164897748861,48.10447444732609,0 20.78982877867038,48.10690687519515,0 20.78936228954513,48.10677645788034,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Miskolc szp C</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.79143275972342,48.10431176285474,0 20.78950918673319,48.1068025070375,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Ozd</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.26436617817227,48.20798947597532,0 20.26305091389887,48.20496292082126,0 20.26369187049631,48.20095027125335,0 20.26433466487608,48.20103867740762,0 20.26354363130087,48.20489753809124,0 20.26478867201674,48.20790002445252,0 20.26436617817227,48.20798947597532,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Csongrad</name>
+		<Placemark>
+			<name>Szeged 47</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.168696042718,46.2811860404091,0 20.16407636178543,46.27520374619751,0 20.16427172898158,46.27490476117382,0 20.16610670095147,46.27587558468488,0 20.16897215628284,46.28109114287786,0 20.168696042718,46.2811860404091,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szeged 43</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.15792677598947,46.26103061255903,0 20.16249052739685,46.25962673594153,0 20.1645922843802,46.25622891039254,0 20.16545068458824,46.25642503407359,0 20.16307768230466,46.26009484210212,0 20.15808247166422,46.26154124808192,0 20.15792677598947,46.26103061255903,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szeged 5</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.10479348872067,46.26708410359104,0 20.11654443910813,46.26520898810666,0 20.11676842233203,46.26567957653362,0 20.10493600534713,46.26756492448543,0 20.10479348872067,46.26708410359104,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szeged 55</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.11388118993676,46.25394059141216,0 20.1263915432443,46.25328535018398,0 20.12643307346365,46.25358919910511,0 20.11402150513313,46.25420202785819,0 20.11388118993676,46.25394059141216,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hodmezovasarhely</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.31715034907202,46.43898867058569,0 20.31873319424622,46.43082600260359,0 20.31938381312769,46.43085527529055,0 20.31765731380979,46.43896646158126,0 20.31715034907202,46.43898867058569,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kistelek</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.98116443565391,46.4684319000592,0 19.98735144303033,46.46024154092535,0 19.98770223814201,46.46041489234917,0 19.98548369646348,46.4647900269211,0 19.98174853801565,46.4686068031564,0 19.98116443565391,46.4684319000592,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Fejer</name>
+		<Placemark>
+			<name>Szekesfehervar M7 bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.4688038349448,47.17317808441668,0 18.46062327093157,47.16837129861294,0 18.46109193315015,47.16806130222885,0 18.4693369703419,47.17285019819339,0 18.4688038349448,47.17317808441668,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szekesfehervar M7 bal</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.46129329343216,47.16842674346633,0 18.46926184123561,47.17300337993747,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Szekesfehervar M7 jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.46837862814451,47.17270452105141,0 18.47763241054933,47.17686614742811,0 18.47728631885456,47.17720154334059,0 18.46797781566129,47.17301267214173,0 18.46837862814451,47.17270452105141,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szekesfehervar M7 jobb</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.47752853509472,47.17708319397763,0 18.46839503294115,47.17281702818391,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Sored</name>
+			<description>limit: 60</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.2749007605717,47.32278962211085,0 18.28300670760184,47.3162577525234,0 18.28320720395869,47.31639864341162,0 18.27514867925415,47.32297654721958,0 18.2749007605717,47.32278962211085,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Aba</name>
+			<description>limit: 70</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.53239281523895,47.04019535752894,0 18.53723721163082,47.03256327311348,0 18.53818127728689,47.03269603675484,0 18.53298654041461,47.04029707476423,0 18.53239281523895,47.04019535752894,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dunaujvaros</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.92712101835686,46.91404838638648,0 18.92620339052889,46.91252568707645,0 18.927150242888,46.91230133099701,0 18.92989503612241,46.92067259915206,0 18.92918312514051,46.92079081619059,0 18.92712101835686,46.91404838638648,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Balatonbozsok</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.21594436681148,46.95734130893538,0 18.21868324718726,46.95466167248379,0 18.22321513075173,46.95305774904472,0 18.2232818018339,46.95339777698926,0 18.21932053050483,46.95501720846881,0 18.21644012317529,46.95745731708646,0 18.21594436681148,46.95734130893538,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Baracska</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.75234681219217,47.28261666068441,0 18.74398477410407,47.27679267577598,0 18.74486270965399,47.27635121387099,0 18.75036011453013,47.28045762877156,0 18.75290612082195,47.2823657302188,0 18.75234681219217,47.28261666068441,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szekesfehervar</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.43609325739525,47.19958905653082,0 18.44396556848171,47.19617222098586,0 18.44430916732393,47.19645257274632,0 18.43653728544371,47.19990702924634,0 18.43609325739525,47.19958905653082,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Gyor Moson Sopron</name>
+		<Placemark>
+			<name>Vitnyed</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.97690119463641,47.58648333676156,0 16.98975438615573,47.58793891522583,0 16.98962571270538,47.58840129553025,0 16.97675845227842,47.58690465211879,0 16.97690119463641,47.58648333676156,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lovo del</name>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					16.7800290548291,47.49907643622284,0 16.78075788717532,47.50313399192189,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lovo del</name>
+			<description>limit: 40</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.78025099289981,47.50371955695686,0 16.77960256799141,47.49914357856799,0 16.78045664972507,47.49906639765884,0 16.78098669823014,47.50368679414596,0 16.78025099289981,47.50371955695686,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lovo eszak</name>
+			<styleUrl>#m_ylw-pushpin2</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					16.77867763783534,47.5070272925827,0 16.78074143207491,47.50284668319633,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Lovo eszak</name>
+			<description>limit: 40</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.77849911974911,47.50688166608443,0 16.78013528676588,47.50202871235978,0 16.78182079074114,47.50254845006646,0 16.77885649231921,47.50710639763074,0 16.77849911974911,47.50688166608443,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Abda</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.54449716913629,47.69600286219823,0 17.55452895389472,47.69113392105969,0 17.55492154243636,47.69147043699398,0 17.54493660447881,47.69632875459831,0 17.54449716913629,47.69600286219823,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Mosonmagyarovar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.25966388209959,47.85516511244504,0 17.26822786172172,47.85628884001498,0 17.26567525500112,47.85778094627967,0 17.26523146774506,47.8563098659122,0 17.26015142280955,47.85559285229149,0 17.25966388209959,47.85516511244504,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sopron</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.54521154032178,47.74056907715002,0 16.5527365347065,47.73301580094811,0 16.55373260045056,47.73346252052307,0 16.54611780576319,47.74086618587868,0 16.54521154032178,47.74056907715002,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>HajduBihar</name>
+		<Placemark>
+			<name>Tepe</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.55830656786337,47.30741683977957,0 21.55488912752011,47.29862416051611,0 21.55559149199444,47.29841670346749,0 21.55898184352834,47.30734747826425,0 21.55830656786337,47.30741683977957,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Puspokladany</name>
+			<description>limit: 70</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.08377938618976,47.32295572851225,0 21.09539635151326,47.32425503133422,0 21.09540185736982,47.32463961988723,0 21.08358542697385,47.32332657819735,0 21.08377938618976,47.32295572851225,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bocskaikert</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.65951409861183,47.64315583128534,0 21.65900566224713,47.63904092621855,0 21.65881596822183,47.63490859166399,0 21.65941424572953,47.63490854357495,0 21.65929935746167,47.63901904649544,0 21.65978544987888,47.64314707419387,0 21.65951409861183,47.64315583128534,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Debrecen 47</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.6335205866876,47.48487463222043,0 21.63239717531187,47.49379447435138,0 21.63178161555029,47.49374635616356,0 21.63303170864091,47.48486248618462,0 21.6335205866876,47.48487463222043,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Debrecen 35</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.59270260434008,47.57480697122882,0 21.58931499459186,47.58253766894326,0 21.58847427797782,47.58225761150938,0 21.5915869608885,47.57440780873804,0 21.59270260434008,47.57480697122882,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Debrecen 33</name>
+			<description>limit: 70</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.56343079426532,47.54714205372935,0 21.57628598129588,47.54509141482117,0 21.57640915298094,47.54548515049024,0 21.56350167611463,47.54750997205002,0 21.56343079426532,47.54714205372935,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Puspokladany 4</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<outerBoundaryIs>
+					<LinearRing>
+						<altitudeMode>relativeToGround</altitudeMode>
+						<coordinates>
+							21.12165555297418,47.33167824343085,0 21.13337126568464,47.33232235101093,0 21.13333009197365,47.33253068312482,0 21.12881053264766,47.33230404798145,0 21.12153557152893,47.33194504459882,0 21.12165555297418,47.33167824343085,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Berettyoujfalu</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.49179892569103,47.14737098270834,0 21.49952488279851,47.1544708325568,0 21.49883114539017,47.15485135282363,0 21.49112860264235,47.14764943321965,0 21.49179892569103,47.14737098270834,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Heves</name>
+		<Placemark>
+			<name>Eger</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.38088672535067,47.88384322452369,0 20.38179889704157,47.87772629961282,0 20.38228176824843,47.87772538335548,0 20.38137708176628,47.88390133572822,0 20.38088672535067,47.88384322452369,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kapolna</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.23907474989143,47.76023592342113,0 20.25068521366449,47.75854534926535,0 20.25085901414594,47.75896084395502,0 20.23919646870682,47.76067009204238,0 20.23907474989143,47.76023592342113,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Gyongyos</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.9222228703805,47.77262150860553,0 19.92782082161347,47.77488612085534,0 19.92753403515446,47.7754547110635,0 19.92192414536352,47.7728592918816,0 19.9222228703805,47.77262150860553,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nagyfuged M3 jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.07150507731342,47.70443556304348,0 20.08172788155719,47.70539145300804,0 20.08163025655441,47.70564378841689,0 20.07141786557,47.7046861895584,0 20.07150507731342,47.70443556304348,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nagyfuged M3 jobb</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.07136424107771,47.70452578160167,0 20.08180369761616,47.70554921221509,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Nagyfuged M3 bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.09198933671759,47.70662475101898,0 20.08111742618726,47.70582977879588,0 20.08133244480892,47.70537601584392,0 20.09208182154904,47.70630686300503,0 20.09198933671759,47.70662475101898,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nagyfuged M3 bal</name>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					20.08796670796634,47.70620315540089,0 20.08137976697366,47.70560913113748,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Eger 24</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.35859283826271,47.9097947480653,0 20.35981393082459,47.90884047463582,0 20.36340688162216,47.90873046653599,0 20.36338579876311,47.9090411201432,0 20.35967734915853,47.90964583864304,0 20.35408365825969,47.91221702745564,0 20.35366278374594,47.91195967905576,0 20.35859283826271,47.9097947480653,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Jasz Nagykun</name>
+		<Placemark>
+			<name>Szolnok</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.17708923052025,47.17806013210805,0 20.17618128993644,47.17509156756314,0 20.17565828952054,47.17474458465025,0 20.17545598595906,47.17234388706858,0 20.17581221337088,47.17232448121117,0 20.17725452478482,47.17707822065963,0 20.17805148747012,47.17798834061883,0 20.17708923052025,47.17806013210805,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ocsod</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.38965078822809,46.89962823119536,0 20.4001364565855,46.89964040986854,0 20.40014958311192,46.89998316612419,0 20.38957064336477,46.90001975576608,0 20.38965078822809,46.89962823119536,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ocsod</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.90573996373513,47.5125385463497,0 19.8993508293836,47.51794352250359,0 19.89901497309618,47.51751686809405,0 19.90535213711256,47.51237918679342,0 19.90573996373513,47.5125385463497,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Jaszalsoszentgy</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.09198355932271,47.36803196973208,0 20.09369583315055,47.36110476098109,0 20.09455041430679,47.3610887487596,0 20.09245861653353,47.367970709144,0 20.09198355932271,47.36803196973208,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Torokszentmiklos</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.42422420289498,47.16924218512282,0 20.43265123596945,47.16250160210571,0 20.43309311707456,47.16279062167041,0 20.42691042312558,47.16770982300312,0 20.42447095963938,47.16935657739062,0 20.42422420289498,47.16924218512282,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kunszentmarton</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.28932104475154,46.83862053732722,0 20.29548505122093,46.83238399674195,0 20.29587841178188,46.83244317897829,0 20.28970579375648,46.83883141852001,0 20.28932104475154,46.83862053732722,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kunhegyes</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.62510895760802,47.36053546849177,0 20.62320054779929,47.35330007421826,0 20.62368078526113,47.35320861807855,0 20.62558778288062,47.36045749761374,0 20.62510895760802,47.36053546849177,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Karcag</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							20.89925172519549,47.33161260071425,0 20.90891427976887,47.32571128644712,0 20.91027627253375,47.32580902748624,0 20.89969984845757,47.33204183259286,0 20.89925172519549,47.33161260071425,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Komarom Esztergom</name>
+		<Placemark>
+			<name>Nyergesujfalu</name>
+			<description>limit: 60</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.60604920608595,47.75302833772643,0 18.61683629487257,47.75145608169686,0 18.61695882827917,47.75206228097194,0 18.60616540953368,47.75347701638905,0 18.60604920608595,47.75302833772643,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Tata</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.3285424977321,47.64803225406378,0 18.33213074144201,47.64548899292229,0 18.33556244415817,47.64473752184904,0 18.33562850639776,47.64495956499035,0 18.33212402038395,47.64593007964406,0 18.32892408147208,47.64816303912254,0 18.3285424977321,47.64803225406378,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Tat</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.65666900314693,47.73923347400104,0 18.66668873010238,47.73712808658828,0 18.66677933447927,47.73728111530683,0 18.65677826725138,47.73947831909571,0 18.65666900314693,47.73923347400104,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Tatabanya</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.40956589783699,47.57816173913573,0 18.40924506633867,47.57802019342533,0 18.41235292937209,47.57557204912813,0 18.41560524469251,47.57400411531944,0 18.41963254303657,47.57270841178477,0 18.41976675902769,47.57295926574491,0 18.41366430558933,47.57522575466908,0 18.41132021652679,47.57667260882324,0 18.40956589783699,47.57816173913573,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Komarom</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.18550211315022,47.73477990605591,0 18.19105102119227,47.73422995825435,0 18.19742127510879,47.73324298682914,0 18.1975625147448,47.73365033307983,0 18.18557793917825,47.73509205932528,0 18.18550211315022,47.73477990605591,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Aszar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.99497466802496,47.51416337722525,0 17.99809273343559,47.51276961982453,0 18.0014867481931,47.51052442768319,0 18.00185969992391,47.51077018053437,0 17.99855191876842,47.51303511235891,0 17.99517793957752,47.51442760302389,0 17.99497466802496,47.51416337722525,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Nograd</name>
+		<Placemark>
+			<name>Matraterenye</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.96667235494589,48.00930000722873,0 19.97777434093939,48.01032811604161,0 19.97743794113585,48.01084110274192,0 19.96694998473517,48.00966532155822,0 19.96667235494589,48.00930000722873,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>SzendehelyKatalinpuszta</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.09670665970111,47.83910361587961,0 19.10077196132287,47.84673378218006,0 19.09949224079402,47.84733799735072,0 19.094542364157,47.839869114717,0 19.09670665970111,47.83910361587961,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Salgotarjan</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.79636406329003,48.09153242619538,0 19.80040755403649,48.09384191556482,0 19.80163496435716,48.09536419903343,0 19.80445785750284,48.09713041520303,0 19.80390446207452,48.09747279482124,0 19.79605023221046,48.09171939411414,0 19.79636406329003,48.09153242619538,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ersekvadkert</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.19494903380101,47.98860752211557,0 19.19925509583035,47.99665290812793,0 19.19830231267894,47.99687836159355,0 19.19415725334623,47.98878408967827,0 19.19494903380101,47.98860752211557,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szecseny</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.50344617103436,48.08154252828101,0 19.50624565154189,48.0819294322599,0 19.51355266034,48.08126098516946,0 19.51355395332399,48.08157954028955,0 19.50618089087947,48.08232304911387,0 19.5033377957564,48.08180673535349,0 19.50344617103436,48.08154252828101,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Pest</name>
+		<Placemark>
+			<name>Cegled</name>
+			<description>limit: 90</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.78920184722369,47.14996948256861,0 19.7884215867262,47.14102686619906,0 19.78892679366476,47.14096650824953,0 19.78984527932968,47.14993599836927,0 19.78920184722369,47.14996948256861,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Solymar</name>
+			<description>limit: 70</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.95504509851319,47.5988500768175,0 18.95725106966865,47.60152750304425,0 18.96305253432774,47.59929899599962,0 18.96318962896457,47.59952866516084,0 18.95064430782516,47.60451981395,0 18.95504509851319,47.5988500768175,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dunakeszi</name>
+			<description>limit: 110</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.14517378160567,47.59843369559224,0 19.13735756817918,47.5964244739456,0 19.13772572940815,47.59612879463481,0 19.14537024959808,47.5982288136241,0 19.14517378160567,47.59843369559224,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dunakeszi</name>
+			<styleUrl>#m_ylw-pushpin00</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.13732879487433,47.59626788378492,0 19.14538465453301,47.59836305941595,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Maglod</name>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin71</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.36425646913486,47.44730284729227,0 19.36674640170796,47.4468999562428,0 19.37607622755613,47.44759094883955,0 19.37604651854627,47.44792806473396,0 19.36434377021003,47.44754106869962,0 19.36425646913486,47.44730284729227,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Somogy</name>
+		<Placemark>
+			<name>Kaposvar 67</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.78257329651286,46.36560836927841,0 17.78299421563017,46.37118979946696,0 17.78249092751464,46.37115464093195,0 17.78220467205608,46.36563729419674,0 17.78257329651286,46.36560836927841,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kaposvar 67</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.81206733979144,46.36384701060187,0 17.82114574711589,46.36042429466253,0 17.82157274122372,46.36076431478835,0 17.81235729490749,46.36417229268492,0 17.81206733979144,46.36384701060187,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Balatonfoldvar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.87979561842218,46.84949544638003,0 17.88820159484603,46.85345170100313,0 17.88784445039186,46.85369754237418,0 17.8795102733262,46.84974818043729,0 17.87979561842218,46.84949544638003,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kethely</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.39267519229966,46.65084671944491,0 17.39060481390837,46.65659059682344,0 17.39003986587361,46.6565447907489,0 17.39218885857285,46.65077924807503,0 17.39267519229966,46.65084671944491,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sagvar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.10112513378216,46.83808128309641,0 18.10171281676947,46.83606797234957,0 18.10427179607823,46.83219124665433,0 18.10536962492951,46.83172774047628,0 18.10557137032007,46.83198926414143,0 18.10439028922672,46.83274702223174,0 18.10212102376406,46.83643325149937,0 18.10157445624544,46.8381245366718,0 18.10112513378216,46.83808128309641,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Visz</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.77645292252085,46.73041628558723,0 17.77514111305781,46.72195931991385,0 17.77553726659517,46.72191846954459,0 17.77700145607674,46.73037672472116,0 17.77645292252085,46.73041628558723,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Szabolcs Szatmar Bereg</name>
+		<Placemark>
+			<name>Mateszalka</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							22.31050029793868,47.96046647466289,0 22.31547587876588,47.95967157753718,0 22.32066324457033,47.95987953877031,0 22.32085636292249,47.96018639018236,0 22.3156040819195,47.96006955862919,0 22.31047287416054,47.96084548537438,0 22.31050029793868,47.96046647466289,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza 36</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.72094252173917,47.96469687566564,0 21.7276679818104,47.96056882185616,0 21.72830888077042,47.96087425331688,0 21.72125231160906,47.96521553331012,0 21.72094252173917,47.96469687566564,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza 4</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.727912035919,47.96604207294359,0 21.7223032604667,47.96125266673282,0 21.72282363617646,47.96115153025863,0 21.72830134961028,47.96583755487041,0 21.727912035919,47.96604207294359,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza 4 - 2</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.73526228909595,47.95175921406477,0 21.74563784721937,47.9517168249487,0 21.74562178788823,47.95210889370991,0 21.7352335977806,47.95214599509718,0 21.73526228909595,47.95175921406477,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza M3 jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.72801435304504,47.88449371527044,0 21.7390524584958,47.88652731015269,0 21.73860219656846,47.88721792613947,0 21.72761983556123,47.88524858790888,0 21.72801435304504,47.88449371527044,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza M3 jobb</name>
+			<styleUrl>#m_ylw-pushpin4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					21.72772181240594,47.88480865859286,0 21.73875397687438,47.88673808991008,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza M3 bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							21.73779477224202,47.88636666687723,0 21.74674649305485,47.88754361687312,0 21.74666490695307,47.88781025772838,0 21.73749525674117,47.88705072669818,0 21.73779477224202,47.88636666687723,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyiregyhaza M3 bal</name>
+			<styleUrl>#m_ylw-pushpin4</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					21.74682486251731,47.8876679939506,0 21.7381628680109,47.8867715068676,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Tolna</name>
+		<Placemark>
+			<name>Dunafoldvar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.91514809702759,46.80513570047942,0 18.91714357013188,46.80224905085639,0 18.91794280186695,46.79923401345015,0 18.91831985807518,46.79924648416974,0 18.91788249407151,46.80255924992028,0 18.91565861156478,46.80524169461739,0 18.91514809702759,46.80513570047942,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szekszard</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.695417156014,46.31436796089135,0 18.69383014869717,46.30957796460893,0 18.6943225612968,46.31007990968031,0 18.69573775507206,46.31432123149318,0 18.695417156014,46.31436796089135,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dombovar</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.13086058774406,46.38213169010873,0 18.13040882406303,46.37552001979277,0 18.13063037557388,46.37551891761629,0 18.13128700486371,46.37845604494125,0 18.13125196360322,46.3821243865608,0 18.13086058774406,46.38213169010873,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bonyhad</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.53768803534795,46.29329530184711,0 18.54105242718261,46.30014450639932,0 18.5407182843303,46.30031620504568,0 18.53869848963669,46.29667449032236,0 18.53744376135755,46.2933926358678,0 18.53768803534795,46.29329530184711,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nagydorog</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.65495708777219,46.63017979403402,0 18.65649803146562,46.626586949103,0 18.65552203267869,46.62543064234502,0 18.65583448072926,46.62526392335644,0 18.65703400117724,46.62645771555097,0 18.65544199682398,46.63027531645616,0 18.65495708777219,46.63017979403402,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hogyesz</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.41391957374623,46.50151758941075,0 18.41661308186579,46.4972202375457,0 18.41852891038402,46.4962529845653,0 18.41876433878093,46.49645518789251,0 18.41690776375818,46.49777702195563,0 18.41450136944034,46.50173162030323,0 18.41391957374623,46.50151758941075,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Vas</name>
+		<Placemark>
+			<name>Sarvar</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.93111836903347,47.27239687544409,0 16.93378107571507,47.26977204596575,0 16.93966809976594,47.26796513729607,0 16.93994398540854,47.2683789689512,0 16.93150989136954,47.27253082463857,0 16.93111836903347,47.27239687544409,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Szombathely</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.63406318564402,47.2086399516972,0 16.64233966816276,47.2114000525857,0 16.64241014686763,47.21186618343447,0 16.63384755019061,47.20904883260278,0 16.63406318564402,47.2086399516972,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Vasszecseny</name>
+			<description>limit: 40</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.74466531189337,47.18345074426073,0 16.74926306084658,47.18027831755855,0 16.75043237203666,47.17976286972347,0 16.75053794919381,47.17998980910478,0 16.74810263881399,47.18181503163452,0 16.74495096395708,47.1837171545584,0 16.74466531189337,47.18345074426073,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kald</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.04610287452443,47.168171403755,0 17.05395688442092,47.16339153857742,0 17.054387604929,47.16375712146476,0 17.04625978950916,47.16848682117026,0 17.04610287452443,47.168171403755,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Kam</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.86760709556929,47.10563921942268,0 16.87567862842205,47.100959130579,0 16.87599374848931,47.10119085144508,0 16.86806650171013,47.10597494563341,0 16.86760709556929,47.10563921942268,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Veszprem</name>
+		<Placemark>
+			<name>Ajkarendek</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.56544766602268,47.14322212295273,0 17.57684056341811,47.13985229278013,0 17.57704503827905,47.14025232161427,0 17.56535701569956,47.1436650718471,0 17.56544766602268,47.14322212295273,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nemesvita</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.37030772295993,46.84019852078734,0 17.37597966836707,46.8317881342359,0 17.37684198001118,46.83207058910015,0 17.37149489966931,46.8404165460104,0 17.37030772295993,46.84019852078734,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Balatonfured</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.88129812210023,46.94921302692012,0 17.87471698432692,46.94682382509334,0 17.87454928737581,46.94621432526169,0 17.88145633663133,46.94896653796282,0 17.88129812210023,46.94921302692012,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Epleny</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.90937845778841,47.21378966432016,0 17.91343636908417,47.2101539961753,0 17.91769535570551,47.20767069040627,0 17.91805296213404,47.20787417669731,0 17.90981379068005,47.21399740498818,0 17.90937845778841,47.21378966432016,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Balatonkenese</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.11665736241276,47.03284187819994,0 18.10676824419196,47.03332011661669,0 18.10637789017032,47.03264228062623,0 18.11025537500738,47.03287601021552,0 18.11667140689179,47.03262163307652,0 18.11665736241276,47.03284187819994,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Totvazsony</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.79111292749909,47.02069184636862,0 17.77872817050503,47.01798977920784,0 17.77891824090624,47.01758098515009,0 17.79126782407453,47.02036436987844,0 17.79111292749909,47.02069184636862,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nyarad</name>
+			<description>limit: 60</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.34807580599976,47.27896435409844,0 17.35647019294098,47.28057551884712,0 17.35417495402559,47.28359467061181,0 17.34675466817494,47.2809914077649,0 17.34807580599976,47.27896435409844,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Papa</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.5216606187635,47.28069572626679,0 17.52264734755723,47.27839945224089,0 17.52606672884908,47.27607817730588,0 17.52643368139646,47.27618066023462,0 17.52233548573176,47.28063018005222,0 17.5216606187635,47.28069572626679,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Liter</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.00740292224348,47.10308688988038,0 18.01569093578316,47.09847635690458,0 18.01599062421726,47.09870885055367,0 18.00781439530169,47.10335670398865,0 18.00740292224348,47.10308688988038,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sumeg</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.2895321141723,46.98159818318747,0 17.28763336519686,46.98357835204407,0 17.28295678231024,46.98597510300536,0 17.28256642887131,46.98571843619381,0 17.28679781807653,46.98354265206562,0 17.28905852879065,46.98141772934029,0 17.2895321141723,46.98159818318747,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Zala</name>
+		<Placemark>
+			<name>Nagykanizsa</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.02036176659327,46.44984305339712,0 17.0233584231025,46.44826645850623,0 17.02769606466911,46.44721351404442,0 17.03058751819832,46.44849645986597,0 17.02942414597591,46.44904591126569,0 17.02699425949448,46.44804248943409,0 17.02390031383849,46.44844600391856,0 17.02081002173892,46.45023937754763,0 17.02036176659327,46.44984305339712,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zalabaksa</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.55093725797228,46.70521276556934,0 16.54770544316314,46.69939845420238,0 16.54817194155736,46.69925800019969,0 16.55145057563442,46.70511328045891,0 16.55093725797228,46.70521276556934,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zalaegerszeg</name>
+			<description>limit: 70</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.85437619470683,46.86292013135336,0 16.85384361145422,46.86891217697287,0 16.85332950124372,46.8688899245782,0 16.85344389084518,46.86281452441123,0 16.85437619470683,46.86292013135336,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zalaszentbalazs</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.91861731167153,46.58749705017102,0 16.91866904266156,46.58165788137037,0 16.91974143068543,46.58165235613873,0 16.9190612347377,46.58750999214838,0 16.91861731167153,46.58749705017102,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zalasarszeg</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.07698833038053,46.49045932993663,0 17.08319632668118,46.49568600637969,0 17.08288846974647,46.49587572036056,0 17.07646597912031,46.49069307002704,0 17.07698833038053,46.49045932993663,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lenti</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.52186198791494,46.62181095698697,0 16.53068294662323,46.6223070799311,0 16.53063640440584,46.62252135484361,0 16.52181527560221,46.62203138836702,0 16.52186198791494,46.62181095698697,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Nova</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							16.67756929975378,46.68505018671473,0 16.6854069571181,46.68607634118081,0 16.68522936868694,46.68677114659799,0 16.67748697675372,46.68528817421848,0 16.67756929975378,46.68505018671473,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Vonyarcvashegy</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.32310827189203,46.7607394430817,0 17.32670342031681,46.76039569263671,0 17.33348402570551,46.76024186258278,0 17.3337815999671,46.76053757958894,0 17.33198702051692,46.76071475799951,0 17.32320720921327,46.76106261395945,0 17.32310827189203,46.7607394430817,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Zalaapati</name>
+			<description>limit: 50</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.11055129191221,46.72649624032483,0 17.11934741410202,46.72690572278881,0 17.11934743723195,46.7271390749369,0 17.11028358266018,46.72675220293605,0 17.11055129191221,46.72649624032483,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>hagyomanyos</name>
+		<Placemark>
+			<name>M1 Maglod bal</name>
+			<description>limit: 110</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.31641267983759,47.42276411117875,0 19.31516418368017,47.41578952450163,0 19.31624388704234,47.41569310933217,0 19.31853729810794,47.42185140135131,0 19.31641267983759,47.42276411117875,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Maglod bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.31731819824595,47.42235605855268,0 19.3155400271148,47.41607886580509,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Maglod jobb</name>
+			<description>limit: 110</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.3169598158374,47.41089573178156,0 19.31649587784129,47.41771838357879,0 19.31524792999974,47.41783365774275,0 19.31544101248651,47.41094965995448,0 19.3169598158374,47.41089573178156,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Maglod jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.31624615734914,47.41094691346733,0 19.31603703183623,47.41720220281328,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Halasztelek</name>
+			<description>limit: 110</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.02460668037764,47.37883650722597,0 19.0353025030759,47.37945005215568,0 19.03521025122717,47.37995449282253,0 19.02448980498117,47.37942116635491,0 19.02460668037764,47.37883650722597,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Halasztelek</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.03505637607704,47.37960833714334,0 19.02491840084963,47.37925690807452,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Erd bal</name>
+			<description>limit: 110</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.01190320506036,47.39531552214562,0 19.01376725429133,47.38880510408561,0 19.0144996240955,47.38887563667616,0 19.01256926690866,47.39537766134643,0 19.01190320506036,47.39531552214562,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Erd bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					19.01415675650084,47.38871093335526,0 19.01230070621628,47.39501983022541,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Erd jobb</name>
+			<description>limit: 90</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							19.00390994616991,47.40081704082023,0 18.99574928734588,47.3995177188141,0 18.99599796660166,47.39917735665188,0 19.00398112979715,47.40042747166889,0 19.00390994616991,47.40081704082023,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Erd jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.99824191511331,47.39964374081033,0 19.00339223326375,47.40050820579893,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 bevezeto</name>
+			<description>limit: 100</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.93455573767768,47.45183929934771,0 18.94315948839468,47.45186661290515,0 18.94317565974537,47.45225109709946,0 18.93458804582564,47.45212699521893,0 18.93455573767768,47.45183929934771,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 bevezeto</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.93451942397116,47.45196835618095,0 18.94306977181158,47.45202935916792,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 kivezeto</name>
+			<description>limit: 100</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.95029569259835,47.452405673271,0 18.9423619699672,47.45242091414558,0 18.94248021754641,47.45197382903277,0 18.95123777634543,47.45213483270251,0 18.95029569259835,47.452405673271,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1M7 kivezeto</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.95094651220557,47.45227624684739,0 18.94283954163215,47.45222661802706,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 outlet jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.87230033382598,47.46572597640395,0 18.86434310287318,47.46915266836876,0 18.86400559679054,47.46887365194941,0 18.87165646566098,47.46515572971607,0 18.87230033382598,47.46572597640395,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 outlet bal</name>
+			<description>limit: 100</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.85704165392121,47.47221850151781,0 18.8648310550807,47.46834045018466,0 18.86522382295312,47.46859119530818,0 18.85727929584582,47.47250314231012,0 18.85704165392121,47.47221850151781,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 outlet bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.8571692743167,47.47236812836103,0 18.86488775247708,47.46848286472106,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Csabdi jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.63113481697994,47.51041686228537,0 18.62014267211062,47.50973773652937,0 18.62024103203706,47.50923012005937,0 18.63123521719985,47.50987641510558,0 18.63113481697994,47.51041686228537,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Csabdi jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.6312237256399,47.51033526577347,0 18.62033852833748,47.50959246117454,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Csabdi bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.62089312827919,47.50967465869722,0 18.61134723971054,47.50898983117138,0 18.61180606283726,47.50818319805105,0 18.62111893226403,47.50918982678058,0 18.62089312827919,47.50967465869722,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Csabdi bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.61156668225031,47.50856725640459,0 18.62083563211576,47.50948483605318,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Tata jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.36261836804018,47.60961243810384,0 18.35274731814933,47.61331369511595,0 18.35244594965826,47.61301375351286,0 18.36231298692775,47.60926308102114,0 18.36261836804018,47.60961243810384,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Tata jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.36263319613059,47.60942961137185,0 18.3528666056425,47.61309577397825,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Tata bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.34412249561984,47.61606504948293,0 18.35291323523059,47.61272976664564,0 18.35327550008628,47.61327107333597,0 18.34440921837781,47.61637258802249,0 18.34412249561984,47.61606504948293,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Tata bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.34436622982761,47.61612771380074,0 18.35240826595231,47.61312882304124,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Acs jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							18.00367383377505,47.68300860493105,0 18.0147009007692,47.68277278011799,0 18.01464286102793,47.68328298958826,0 18.00359652864979,47.68342424529988,0 18.00367383377505,47.68300860493105,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Acs jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					18.01436788420615,47.68294781466743,0 18.0045104113904,47.68315617086795,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Acs bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.99390648801441,47.68257172067457,0 18.00447673024618,47.68275070909082,0 18.004487773034,47.68350215712152,0 17.99378473229618,47.68291639160405,0 17.99390648801441,47.68257172067457,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Acs bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.99435106559201,47.68270416006119,0 18.00305479275266,47.68305198320235,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Jegespuszta jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.83732770365622,47.68408156520164,0 17.84849739278574,47.68419358789571,0 17.8484699264344,47.68454127089183,0 17.83732290005612,47.68449109104825,0 17.83732770365622,47.68408156520164,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Jegespuszta jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.84855505695108,47.68436260426432,0 17.83734243982956,47.68439449427778,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Jegespuszta bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.82730269108524,47.68464445898062,0 17.83827960818983,47.68401254076756,0 17.83831854688947,47.684421665779,0 17.82738597786788,47.68499079899906,0 17.82730269108524,47.68464445898062,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Jegespuszta bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.82752972234042,47.68469263419011,0 17.83789675449871,47.68424812218835,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Abda jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.53242286622476,47.68843947917971,0 17.52310201161347,47.69107968349709,0 17.52291724067984,47.6906875842265,0 17.53244705946256,47.68772131210319,0 17.53242286622476,47.68843947917971,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Abda jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.53252566408992,47.68824579324085,0 17.52323438209296,47.69082459128428,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Abda bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.51340949834202,47.69364897060483,0 17.52378415259774,47.69036459859864,0 17.52405186453226,47.6908055115573,0 17.51390838986027,47.69396275582871,0 17.51340949834202,47.69364897060483,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Abda bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.51359805447246,47.69374605203627,0 17.52380501161203,47.69057278918511,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Mosonmagyarovar jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.27159134917264,47.8341727796068,0 17.27443002995756,47.83286308645516,0 17.26577728127977,47.83937314550517,0 17.26555433376592,47.83886331213127,0 17.27159134917264,47.8341727796068,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Mosonmagyarovar jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.27286945852377,47.83364734292304,0 17.26660083542362,47.83861405049327,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Mosonmagyarovar bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.26116268191424,47.84212242389172,0 17.26603069758321,47.83846536563214,0 17.2667827281684,47.83867323896847,0 17.26138860303178,47.84256245092334,0 17.26116268191424,47.84212242389172,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Mosonmagyarovar bal</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.26119281190972,47.84237431755555,0 17.26623126100963,47.83868462522065,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>M1 Level bal</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.19310589641034,47.8827299776885,0 17.20152493124441,47.8783791778184,0 17.20235487391152,47.87912053297663,0 17.19383705005979,47.8833012889564,0 17.19310589641034,47.8827299776885,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Level jobb</name>
+			<description>limit: 130</description>
+			<styleUrl>#m_ylw-pushpin5</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							17.21054349898196,47.8746455467261,0 17.20150363583238,47.87951949627662,0 17.20072535088452,47.87887942054945,0 17.20978745192131,47.87419462135578,0 17.21054349898196,47.8746455467261,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>M1 Level jobb</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					17.21035372498409,47.8744383154071,0 17.20190282974902,47.87878485658735,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
