@@ -1,5 +1,6 @@
 
 #include "config.h"
+#include <FS.h>
 #include <EventManager.h>
 
 #include "gps.h"
@@ -57,9 +58,69 @@ void setup() {
  * Loading the map into memory
  */
 void loadMap() {
-    poiCount = 2;
+    char buff[32];
+    byte i,j;
+
+    poiCount = 0;
     
+    SPIFFS.begin();
+    File f = SPIFFS.open("/map.dat", "r");
+    if (!f) {
+#ifdef DEBUG
+        Serial.println("Map open failed");
+        return;
+#endif
+    }
+
+    f.readBytes(buff, 4);
+    if (strncmp(buff, "POIS", 4)) {
+#ifdef DEBUG
+        Serial.println("Invalid or corrupt map file");
+        return;
+#endif
+    }
+
+    // Read poi count
+    f.readBytes(buff, 2);
+    memcpy(&poiCount, buff, 2);
+
+#ifdef DEBUG
+    Serial.print("Loading ");
+    Serial.print(poiCount);
+    Serial.println(" pois");
+#endif
+
     pois = new POI[poiCount];
+
+    i=0;
+
+    f.readBytes(buff, 8);
+    memcpy(&pois[i], buff, 8);
+    Serial.print("Limit: ");
+    Serial.print(pois[i].limit);
+    Serial.print(" heading: ");
+    Serial.print(pois[i].heading,8);
+    Serial.print(" edgeCount: ");
+    Serial.println(pois[i].edgeCount);
+
+    pois[i].edges = new EDGE[pois[i].edgeCount];
+    for (j=0; j<pois[i].edgeCount; j++) {
+        f.readBytes(buff, sizeof(EDGE));
+        memcpy(&pois[i].edges[j], buff, sizeof(EDGE));
+        Serial.print("lng1: "); Serial.print(pois[i].edges[j].lng1, 8);
+        Serial.print(" lng2: "); Serial.print(pois[i].edges[j].lng2, 8);
+        Serial.print(" m: "); Serial.print(pois[i].edges[j].m, 8);
+        Serial.print(" c: "); Serial.println(pois[i].edges[j].c, 8);
+    }
+    
+    
+    f.close();
+
+#ifdef DEBUG
+    Serial.print("Free heap: ");
+    Serial.println(ESP.getFreeHeap());
+#endif
+
 
     pois[0].limit = 20;
     pois[0].heading = -1;

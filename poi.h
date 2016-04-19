@@ -18,13 +18,14 @@ struct EDGE {
 class POI {
     public:
         // Speed limit
-        uint8_t limit;
+        uint16_t limit;
+
+        // Number of edges in this poi
+        uint16_t edgeCount;
 
         // Heading limit, if less than 0, then we don't use this value
         float heading;
 
-        // Number of edges in this poi
-        uint8_t edgeCount;
 
         // Edges of the polygon
         EDGE* edges;

@@ -124,8 +124,39 @@ function parseLine($place) {
  */
 function writePois($output, $pois) {
     fwrite($output, 'POIS'); // Magic string
+    fwrite($output, pack('v', count($pois)));
     
-    fwrite($output, pack('vf', count($pois), M_PI));
+    foreach ($pois as $poi) {
+        writePoi($output, $poi);
+    }
+}
+
+/**
+ * Write a single poi into the output file
+ * @param resource the output file handle
+ * @param array the poi definition
+ */
+function writePoi($output, $poi) {
+    // Write poi header
+    fwrite($output,
+        pack('vvf',
+            $poi['l'],
+            count($poi['edges']),
+            isset($poi['h']) ? $poi['h'] : -1
+        )
+    );
+    
+    // Write the edges
+    foreach ($poi['edges'] as $edge) {
+        fwrite($output,
+            pack('f*',
+                $edge['lng1'],
+                $edge['lng2'],
+                $edge['m'],
+                $edge['c']
+            )
+        );
+    }
 }
 
 /**
