@@ -59,7 +59,7 @@ void setup() {
  */
 void loadMap() {
     char buff[32];
-    byte i,j;
+    byte i,j, rred;
 
     poiCount = 0;
     
@@ -86,61 +86,53 @@ void loadMap() {
 
 #ifdef DEBUG
     Serial.print("Loading ");
-    Serial.print(poiCount);
-    Serial.println(" pois");
 #endif
 
     pois = new POI[poiCount];
 
-    i=0;
+    for (i=0; i<poiCount; i++) {
 
-    f.readBytes(buff, 8);
-    memcpy(&pois[i], buff, 8);
-    Serial.print("Limit: ");
-    Serial.print(pois[i].limit);
-    Serial.print(" heading: ");
-    Serial.print(pois[i].heading,8);
-    Serial.print(" edgeCount: ");
-    Serial.println(pois[i].edgeCount);
+        // Reading the header
+        rred = f.readBytes(buff, 8);
+        if (rred != 8) {
+#ifdef DEBUG
+            Serial.println("Short read, map might be corrupted");
+#endif
+            poiCount = i - 1;
+            if (poiCount < 1) poiCount = 0;
+            goto finish;
+        }
+        memcpy(&pois[i], buff, 8);
 
-    pois[i].edges = new EDGE[pois[i].edgeCount];
-    for (j=0; j<pois[i].edgeCount; j++) {
-        f.readBytes(buff, sizeof(EDGE));
-        memcpy(&pois[i].edges[j], buff, sizeof(EDGE));
-        Serial.print("lng1: "); Serial.print(pois[i].edges[j].lng1, 8);
-        Serial.print(" lng2: "); Serial.print(pois[i].edges[j].lng2, 8);
-        Serial.print(" m: "); Serial.print(pois[i].edges[j].m, 8);
-        Serial.print(" c: "); Serial.println(pois[i].edges[j].c, 8);
+        pois[i].edges = new EDGE[pois[i].edgeCount];
+        
+        // reading edges
+        for (j=0; j<pois[i].edgeCount; j++) {
+            rred = f.readBytes(buff, sizeof(EDGE));
+            if (rred < sizeof(EDGE)) {
+#ifdef DEBUG
+                Serial.println("Short read, map might be corrupted");
+#endif
+                poiCount = i - 1;
+                if (poiCount < 1) poiCount = 0;
+                goto finish;
+            }
+            memcpy(&pois[i].edges[j], buff, sizeof(EDGE));
+
+        }
+        Serial.print(".");
     }
-    
-    
+finish:
+
     f.close();
 
 #ifdef DEBUG
-    Serial.print("Free heap: ");
+    Serial.print("\n");
+    Serial.print("Loaded ");
+    Serial.print(poiCount);
+    Serial.print(" pois, free heap: ");
     Serial.println(ESP.getFreeHeap());
 #endif
-
-
-    pois[0].limit = 20;
-    pois[0].heading = -1;
-    pois[0].edgeCount = 6;
-    pois[0].edges = new EDGE[pois[0].edgeCount];
-    pois[0].edges[0] = {19.257617, 19.2570215, 0.759865659113, 32.9248752653};
-    pois[0].edges[1] = {19.2570215, 19.2574614, -0.658331438952, 60.235127274};
-    pois[0].edges[2] = {19.2574614, 19.2576277, 0.674684305537, 34.5646280289};
-    pois[0].edges[3] = {19.2576277, 19.2573166, -0.581806493057, 58.7616600367};
-    pois[0].edges[4] = {19.2573166, 19.2577779, 0.74550184261, 33.201263191};
-    pois[0].edges[5] = {19.2577779, 19.257617, -0.652579241748, 60.1251981997};
-
-    pois[1].limit = 50;
-    pois[1].heading = 232;
-    pois[1].edgeCount = 4;
-    pois[1].edges = new EDGE[pois[1].edgeCount];
-    pois[1].edges[0] = {19.1219669, 19.1221708, -0.674840608121, 60.4538778713};
-    pois[1].edges[1] = {19.1221708, 19.1260117, 0.750344971231, 33.2012358012};
-    pois[1].edges[2] = {19.1260117, 19.1257757, -0.644491525456, 59.8788949564};
-    pois[1].edges[3] = {19.1257757, 19.1219669, 0.760475740394, 33.0078061639};
 
 }
 
