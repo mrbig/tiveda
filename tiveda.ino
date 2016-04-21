@@ -38,6 +38,8 @@ void setup() {
     serialBuffer.reserve(200);
     message.reserve(200);
 
+    analogWriteFreq(1000);
+    
     loadMap();
     
     GPS::init(&eventManager, &message);
