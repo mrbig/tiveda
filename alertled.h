@@ -37,8 +37,8 @@ class AlertLED {
             if (alertStatus == ALERT_NONE) {
                 if (!animPtr) return;
                 animPtr = 0;
-                analogWrite(CFG_LED_ALERT1, 0);
-                analogWrite(CFG_LED_ALERT2, 0);
+                analogWrite(CFG_LED_ALERT1, 1023);
+                analogWrite(CFG_LED_ALERT2, 1023);
                 return;
             }
 
@@ -59,9 +59,7 @@ class AlertLED {
         /**
          * Alert has been reset
          */
-        static void resetCallback(int eventCode, int eventParam) {
-            alertStatus = ALERT_NONE;
-        };
+        static void resetCallback(int eventCode, int eventParam);
 
     protected:
         /**

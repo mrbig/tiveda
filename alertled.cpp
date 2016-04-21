@@ -23,6 +23,7 @@ void AlertLED::init(EventManager* eventManager) {
     
     eventManager->addListener(ALERT_TRIGGERED, &AlertLED::alertTriggeredCallback);
     eventManager->addListener(ALERT_RESET, &AlertLED::resetCallback);
+    eventManager->addListener(GPS_STATUS_CHANGED, &AlertLED::resetCallback);
     ticker.attach_ms(50, &AlertLED::tickCallback);
 };
 
@@ -47,5 +48,19 @@ void AlertLED::alertTriggeredCallback(int eventCode, int eventParam) {
     }
     else {
         alertStatus = ALERT_DANGER;
+    }
+    if (alertStatus == ALERT_WARNING) {
+        ticker.attach_ms(50-3*eventParam, &AlertLED::tickCallback);
+    } else {
+        ticker.attach_ms(50, &AlertLED::tickCallback);
+    }
+};
+
+/**
+ * Alert has been reset
+ */
+void AlertLED::resetCallback(int eventCode, int eventParam) {
+    if (eventCode != GPS_STATUS_CHANGED || eventParam == 0) {
+        alertStatus = ALERT_NONE;
     }
 };
