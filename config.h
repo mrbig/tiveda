@@ -6,6 +6,10 @@
 #define ENABLE_STATUSLED 1
 #define ENABLE_ALERTLED 1
 
+// Wifi config
+#define WIFI_SSID "nagya-iot"
+#define WIFI_PASSWORD "[YOUR PASSWORD]"
+
 // GPIO port of the status led
 #define CFG_LED_STATUS 2
 

@@ -2,9 +2,15 @@
 #include "config.h"
 #include <FS.h>
 #include <EventManager.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+#include <ESP8266httpUpdate.h>
 
 #include "gps.h"
 #include "poi.h"
+
+// Current version
+const char VERSION[] PROGMEM = "1.1";
 
 #ifdef ENABLE_STATUSLED
 #include "statusled.h"
@@ -31,19 +37,33 @@ uint8_t poiCount;
 // Set to true when we're in an alert
 boolean inAlert = false;
 
+// This is set true while we're waiting for wifi
+boolean wifiConnecting = false;
+
+/**
+ * System initialization
+ */
 void setup() {
-    // put your setup code here, to run once:
+    // Init serial communication
     Serial.begin(9600);
-    Serial.setDebugOutput(true);
+    //Serial.setDebugOutput(true);
     serialBuffer.reserve(200);
     message.reserve(200);
 
+    // Setup PWM frequency
     analogWriteFreq(1000);
-    
+
+    // Init wifi
+    WiFi.mode(WIFI_STA);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+    wifiConnecting = true;
+
+    // Load map and start gps event handlers
     loadMap();
     
     GPS::init(&eventManager, &message);
 
+    // Initialize output modules
 #ifdef ENABLE_STATUSLED
     StatusLED::init(&eventManager);
 #endif
@@ -51,9 +71,25 @@ void setup() {
     AlertLED::init(&eventManager);
 #endif
 
+    // First events
     eventManager.queueEvent(GPS_STATUS_CHANGED, 0);
     eventManager.addListener(GPS_UPDATED, &checkPois);
     
+}
+
+/**
+ * Main event loop. Basically we just process the events from the eventManager
+ */
+void loop() {
+    // put your main code here, to run repeatedly:
+    eventManager.processEvent();
+    // Seems like this does not get called on ESP8266
+    serialEvent();
+    // Check for wifi connection
+    if (wifiConnecting && WiFi.status() == WL_CONNECTED) {
+        performOTA();
+    }
+    yield();
 }
 
 /**
@@ -87,7 +123,7 @@ void loadMap() {
     memcpy(&poiCount, buff, 2);
 
 #ifdef DEBUG
-    Serial.print("Loading ");
+    Serial.print("Loading map");
 #endif
 
     pois = new POI[poiCount];
@@ -138,17 +174,11 @@ finish:
 
 }
 
-/**
- * Main event loop. Basically we just process the events from the eventManager
- */
-void loop() {
-    // put your main code here, to run repeatedly:
-    eventManager.processEvent();
-    // Seems like this does not get called on ESP8266
-    serialEvent();
-    yield();
-}
 
+
+/**
+ * Handle incoming data from the serial
+ */
 void serialEvent() {
     while (Serial.available()) {
         char inChar = (char)Serial.read();
@@ -205,5 +235,47 @@ void checkPois(int eventCode, int eventParam) {
     Serial.print("Free heep: ");
     Serial.println(ESP.getFreeHeap());
 #endif;
+}
+
+/**
+ * Perform OTA update
+ */
+void performOTA() {
+    String url = String(F("http://sneaker.home/~mrbig/ota/?id=")) + String(ESP.getChipId(), HEX);
+    
+    wifiConnecting = false;
+    
+#ifdef DEBUG
+    Serial.println("");
+    Serial.println("WiFi connected");
+    Serial.println("IP address: ");
+    Serial.println(WiFi.localIP());
+    
+    Serial.print("Starting OTA...");
+#endif
+
+    t_httpUpdate_return ret = ESPhttpUpdate.update(url, FPSTR(VERSION));
+
+    switch (ret) {
+        case HTTP_UPDATE_FAILED:
+#ifdef DEBUG
+            Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
+#endif;
+            break;
+
+        case HTTP_UPDATE_NO_UPDATES:
+#ifdef DEBUG
+            Serial.println("no update found");
+#endif
+            break;
+
+        case HTTP_UPDATE_OK:
+#ifdef DEBUG
+            Serial.println("update successfull");
+#endif
+            break;
+    }
+
+    WiFi.mode(WIFI_OFF); // Turn off wifi to save on power
 }
 
