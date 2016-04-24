@@ -19,9 +19,11 @@ StatusLED::StatusLED() {
 void StatusLED::setStatus(byte state) {
 
     if (state == gpsStatus) return;
+#ifdef DEBUG
     Serial.print("Setting status to ");
     Serial.print(state);
     Serial.print("\n");
+#endif
 
     gpsStatus = state;
 
