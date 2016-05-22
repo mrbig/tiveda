@@ -16,8 +16,10 @@ Ticker AlertLED::ticker;
 void AlertLED::init(EventManager* eventManager) {
     pinMode(CFG_LED_ALERT1, OUTPUT);
     pinMode(CFG_LED_ALERT2, OUTPUT);
+    pinMode(CFG_BEEPER, OUTPUT);
     digitalWrite(CFG_LED_ALERT1, 1);
     digitalWrite(CFG_LED_ALERT2, 1);
+    digitalWrite(CFG_BEEPER, 1);
     
     alertStatus = ALERT_NONE;
     
@@ -50,6 +52,7 @@ void AlertLED::alertTriggeredCallback(int eventCode, int eventParam) {
         alertStatus = ALERT_DANGER;
     }
     if (alertStatus == ALERT_WARNING) {
+        // Warning state is constantly speeding up
         ticker.attach_ms(50-3*eventParam, &AlertLED::tickCallback);
     } else {
         ticker.attach_ms(50, &AlertLED::tickCallback);
@@ -64,3 +67,4 @@ void AlertLED::resetCallback(int eventCode, int eventParam) {
         alertStatus = ALERT_NONE;
     }
 };
+

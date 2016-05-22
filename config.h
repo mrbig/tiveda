@@ -16,6 +16,7 @@
 // GPIO port of the alert led
 #define CFG_LED_ALERT1 12
 #define CFG_LED_ALERT2 14
+#define CFG_BEEPER 4
 
 // GPIO port of the debug button
 #define CFG_BTN 0

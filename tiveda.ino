@@ -51,7 +51,7 @@ void setup() {
     message.reserve(200);
 
     // Setup PWM frequency
-    analogWriteFreq(1000);
+    analogWriteFreq(880);
 
     // Init wifi
     WiFi.mode(WIFI_STA);

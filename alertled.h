@@ -39,6 +39,7 @@ class AlertLED {
                 animPtr = 0;
                 analogWrite(CFG_LED_ALERT1, 1023);
                 analogWrite(CFG_LED_ALERT2, 1023);
+                analogWrite(CFG_BEEPER, 1023);
                 return;
             }
 
@@ -47,6 +48,7 @@ class AlertLED {
             memcpy_P(&anim, &anim_warning[alertStatus][animPtr], sizeof(ALED_CFG));
             analogWrite(CFG_LED_ALERT1, anim.lft);
             analogWrite(CFG_LED_ALERT2, anim.rgt);
+            analogWrite(CFG_BEEPER, anim.beeper);
             
             animPtr++;
         }
