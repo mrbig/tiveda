@@ -54,6 +54,11 @@ class AlertLED {
         }
 
         /**
+         * When GPS reception changed this callback plays the anim
+         */
+        static void receptionAnimCallback();
+
+        /**
          * Incoming alert update
          */
         static void alertTriggeredCallback(int eventCode, int eventParam);
@@ -76,6 +81,15 @@ class AlertLED {
 
         // Timer used for event timing
         static Ticker ticker;
+
+        // Timer used in GPS on/off animation
+        static Ticker receptionTicker;
+
+        // Position in reception sound
+        static uint16_t receptionCounter;
+
+        // Current reception status
+        static byte receptionStatus;
 
 };
 

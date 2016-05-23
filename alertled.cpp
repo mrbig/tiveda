@@ -9,6 +9,15 @@ uint8_t AlertLED::animPtr;
 // Ticker
 Ticker AlertLED::ticker;
 
+// Timer used in GPS on/off animation
+Ticker AlertLED::receptionTicker;
+
+// Position in reception sound
+uint16_t AlertLED::receptionCounter = 0;
+
+// Current reception status
+byte AlertLED::receptionStatus = 0;
+
 /**
  * Register event handlers, and start timer
  * @param EventManager the event manager used for events
@@ -66,5 +75,37 @@ void AlertLED::resetCallback(int eventCode, int eventParam) {
     if (eventCode != GPS_STATUS_CHANGED || eventParam == 0) {
         alertStatus = ALERT_NONE;
     }
+    if (eventCode == GPS_STATUS_CHANGED) {
+        if (eventParam == receptionStatus) return;
+        receptionStatus = eventParam;
+        // Start anim
+        if (receptionStatus) {
+            receptionCounter = 1;
+        } else {
+            receptionCounter = 10;
+        }
+        analogWriteFreq(receptionCounter * 88);
+        analogWrite(CFG_BEEPER, 512);
+        receptionTicker.attach_ms(100, &AlertLED::receptionAnimCallback);
+    }
 };
+
+/**
+ * When GPS reception changed this callback plays the anim
+ */
+void AlertLED::receptionAnimCallback() {
+    if (receptionStatus) {
+        receptionCounter++;
+    } else {
+        receptionCounter--;
+    }
+    
+    analogWriteFreq(receptionCounter * 88);
+    
+    if (receptionCounter == 10 || receptionCounter == 1) {
+        // End of anim
+        receptionTicker.detach();
+        analogWrite(CFG_BEEPER, 1023);
+    }
+}
 
