@@ -2,6 +2,12 @@
 // Define this for various debug features
 #define DEBUG 1
 
+// Board version
+#define BOARD_VERSION "b1"
+
+// Software version
+#define FW_VERSION "1.2"
+
 // Enable / disabled modules
 #define ENABLE_STATUSLED 1
 #define ENABLE_ALERTLED 1

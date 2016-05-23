@@ -10,7 +10,8 @@
 #include "poi.h"
 
 // Current version
-const char VERSION[] PROGMEM = "1.1";
+const char VERSION[] PROGMEM = FW_VERSION;
+const char BVERSION[] PROGMEM = BOARD_VERSION;
 
 #ifdef ENABLE_STATUSLED
 #include "statusled.h"
@@ -241,7 +242,7 @@ void checkPois(int eventCode, int eventParam) {
  * Perform OTA update
  */
 void performOTA() {
-    String url = String(F("http://sneaker.home/~mrbig/ota/?id=")) + String(ESP.getChipId(), HEX);
+    String url = String(F("http://sneaker.home/~mrbig/ota/?id=")) + String(ESP.getChipId(), HEX) + String(F("&board=")) + FPSTR(BVERSION);
     
     wifiConnecting = false;
     
