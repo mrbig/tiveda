@@ -103,6 +103,18 @@ void loadMap() {
     poiCount = 0;
     
     SPIFFS.begin();
+#ifdef DEBUG
+    FSInfo fs_info;
+    SPIFFS.info(fs_info);
+    Serial.print(F("TotalBytes: "));
+    Serial.println(fs_info.totalBytes);
+    Serial.print(F("UsedBytes: "));
+    Serial.println(fs_info.usedBytes);
+    Serial.print(F("BlockSize: "));
+    Serial.println(fs_info.blockSize);
+    Serial.print(F("PageSize: "));
+    Serial.println(fs_info.pageSize);
+#endif
     File f = SPIFFS.open("/map.dat", "r");
     if (!f) {
 #ifdef DEBUG
