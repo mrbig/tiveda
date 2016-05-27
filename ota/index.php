@@ -1,12 +1,15 @@
 <?php
 
-$file = 'tiveda.ino.nodemcu.bin';
+$fileSketch = 'tiveda.ino.nodemcu.bin';
+$fileSpiffs = 'tiveda.spiffs.bin';
 $version = "1.2";
+$mapVersion = 0x1edba629;
 
 file_put_contents('/tmp/esp_debug.txt', print_r($_SERVER, true));
 
 if (
     empty($_SERVER['HTTP_X_ESP8266_VERSION']) ||
+    empty($_SERVER['HTTP_X_ESP8266_MODE']) ||
     empty($_GET['id'])
 )
 {
@@ -17,9 +20,19 @@ if (
 }
 
 
-if (version_compare($_SERVER['HTTP_X_ESP8266_VERSION'], $version) >=0 || !is_readable($file)) {
-    header($_SERVER["SERVER_PROTOCOL"].' 304 Not Modified', true, 304);
-    exit();
+if ($_SERVER['HTTP_X_ESP8266_MODE'] == 'spiffs') {
+    $file = $fileSpiffs;
+    if ($mapVersion <= hexdec($_SERVER['HTTP_X_ESP8266_VERSION']) || !is_readable($file)) {
+        header($_SERVER["SERVER_PROTOCOL"].' 304 Not Modified', true, 304);
+        exit();
+    }
+} else {
+    $file = $fileSketch;
+    if (version_compare($_SERVER['HTTP_X_ESP8266_VERSION'], $version) >=0 || !is_readable($file)) {
+        header($_SERVER["SERVER_PROTOCOL"].' 304 Not Modified', true, 304);
+        exit();
+    }
+
 }
 
 header('Content-Type: application/octet-stream');

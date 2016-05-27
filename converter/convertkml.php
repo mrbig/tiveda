@@ -46,13 +46,15 @@ var_dump($pois);
 $output = fopen($_SERVER['argv'][2], 'w');
 writePois($output, $pois);
 fclose($output);
-echo 'done';
+echo 'done', "\n";
 
 $version = time() - strtotime('2000-01-01 00:00:00');
 
 $output = fopen(dirname($_SERVER['argv'][2]).'/version.dat', 'w');
 fwrite($output, pack('L', $version));
 fclose($output);
+
+echo 'New version is: 0x', dechex($version), "\n";
 
 exit();
 

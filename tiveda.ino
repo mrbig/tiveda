@@ -277,15 +277,33 @@ void performOTA() {
     
 #ifdef DEBUG
     Serial.println("");
-    Serial.println("WiFi connected");
-    Serial.println("IP address: ");
+    Serial.println(F("WiFi connected"));
+    Serial.println(F("IP address: "));
     Serial.println(WiFi.localIP());
     
-    Serial.print("Starting OTA...");
+    Serial.print(F("Starting OTA..."));
 #endif
 
+    // Update application code
     t_httpUpdate_return ret = ESPhttpUpdate.update(url, FPSTR(VERSION));
+    checkErrors(ret);
 
+#ifdef DEBUG
+    Serial.print(F("Updating map..."));
+#endif
+    // Update application SPIFFS
+    ret = ESPhttpUpdate.updateSpiffs(url, String(mapVersion, HEX));
+    checkErrors(ret);
+
+
+
+    WiFi.mode(WIFI_OFF); // Turn off wifi to save on power
+}
+
+/**
+ *  Parse errors from httpupdate
+ */
+ void checkErrors(t_httpUpdate_return ret) {
     switch (ret) {
         case HTTP_UPDATE_FAILED:
 #ifdef DEBUG
@@ -295,17 +313,15 @@ void performOTA() {
 
         case HTTP_UPDATE_NO_UPDATES:
 #ifdef DEBUG
-            Serial.println("no update found");
+            Serial.println(F("no update found"));
 #endif
             break;
 
         case HTTP_UPDATE_OK:
 #ifdef DEBUG
-            Serial.println("update successfull");
+            Serial.println(F("update successfull"));
 #endif
             break;
     }
-
-    WiFi.mode(WIFI_OFF); // Turn off wifi to save on power
-}
+ }
 
