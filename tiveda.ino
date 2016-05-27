@@ -32,6 +32,9 @@ String message;
 // We keep the map here
 POI* pois;
 
+// Map's current version
+uint32_t mapVersion;
+
 // Number of the pois
 uint8_t poiCount;
 
@@ -115,7 +118,18 @@ void loadMap() {
     Serial.print(F("PageSize: "));
     Serial.println(fs_info.pageSize);
 #endif
-    File f = SPIFFS.open("/map.dat", "r");
+
+    File f;
+
+    // Load current mapVersion
+    if (SPIFFS.exists(F("/version.dat"))) {
+        f = SPIFFS.open(F("/version.dat"), "r");
+        f.readBytes(buff, sizeof(mapVersion));
+        memcpy(&mapVersion, buff, sizeof(mapVersion));
+        f.close();
+    }
+
+    f = SPIFFS.open(F("/map.dat"), "r");
     if (!f) {
 #ifdef DEBUG
         Serial.println("Map open failed");
@@ -123,6 +137,7 @@ void loadMap() {
 #endif
     }
 
+    // Read header
     f.readBytes(buff, 4);
     if (strncmp(buff, "POIS", 4)) {
 #ifdef DEBUG
@@ -179,6 +194,8 @@ finish:
 
 #ifdef DEBUG
     Serial.print("\n");
+    Serial.print("Map version: ");
+    Serial.println(mapVersion, HEX);
     Serial.print("Loaded ");
     Serial.print(poiCount);
     Serial.print(" pois, free heap: ");

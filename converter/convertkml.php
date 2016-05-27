@@ -48,6 +48,12 @@ writePois($output, $pois);
 fclose($output);
 echo 'done';
 
+$version = time() - strtotime('2000-01-01 00:00:00');
+
+$output = fopen(dirname($_SERVER['argv'][2]).'/version.dat', 'w');
+fwrite($output, pack('L', $version));
+fclose($output);
+
 exit();
 
 /**
