@@ -1,7 +1,7 @@
 <?php
 
 $file = 'tiveda.ino.nodemcu.bin';
-$version = "1.1";
+$version = "1.2";
 
 file_put_contents('/tmp/esp_debug.txt', print_r($_SERVER, true));
 
