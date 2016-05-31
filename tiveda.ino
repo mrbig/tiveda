@@ -5,6 +5,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <ESP8266httpUpdate.h>
+#include <ESP8266WebServer.h>
+#include <WiFiManager.h>
 
 #include "gps.h"
 #include "poi.h"
@@ -21,7 +23,15 @@ const char BVERSION[] PROGMEM = BOARD_VERSION;
 #include "alertled.h"
 #endif
 
+/**
+ * Global event manager instance
+ */
 EventManager eventManager;
+
+/**
+ * Global wifi manager instance
+ */
+WiFiManager wifiManager;
 
 // Buffer to collect incoming data on serial
 String serialBuffer = "";
@@ -61,6 +71,8 @@ void setup() {
     WiFi.mode(WIFI_STA);
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     wifiConnecting = true;
+
+    wifiManager.autoConnect("tiveda");
 
     // Load map and start gps event handlers
     loadMap();
