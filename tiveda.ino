@@ -68,10 +68,10 @@ void setup() {
     analogWriteFreq(880);
 
     // Init wifi
-    WiFi.mode(WIFI_STA);
-    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     wifiConnecting = true;
-
+#ifndef DEBUG
+    wifiManager.setDebugOutput(false);
+#endif
     wifiManager.autoConnect("tiveda");
 
     // Load map and start gps event handlers
