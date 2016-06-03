@@ -72,6 +72,9 @@ void setup() {
 #ifndef DEBUG
     wifiManager.setDebugOutput(false);
 #endif
+    wifiManager.setNonBlocking(true);
+    wifiManager.setConnectTimeout(30);
+    wifiManager.setConfigPortalTimeout(600);
     wifiManager.autoConnect("tiveda");
 
     // Load map and start gps event handlers
@@ -99,6 +102,10 @@ void setup() {
 void loop() {
     // put your main code here, to run repeatedly:
     eventManager.processEvent();
+    // WifiManager events
+    if (WiFi.getMode() != WIFI_OFF) {
+        wifiManager.process();
+    }
     // Seems like this does not get called on ESP8266
     serialEvent();
     // Check for wifi connection
