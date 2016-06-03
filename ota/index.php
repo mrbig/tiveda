@@ -8,7 +8,7 @@ $mapVersion = 0x1edba629;
 file_put_contents('/tmp/esp_debug.txt', print_r($_SERVER, true));
 
 if (
-    empty($_SERVER['HTTP_X_ESP8266_VERSION']) ||
+    !isset($_SERVER['HTTP_X_ESP8266_VERSION']) ||
     empty($_SERVER['HTTP_X_ESP8266_MODE']) ||
     empty($_GET['id'])
 )
