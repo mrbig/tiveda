@@ -5,6 +5,7 @@
 #include <EventManager.h>
 #include <Ticker.h>
 #include "alertled_anim.h"
+#include "gps.h"
 
 // Alert levels
 #define ALERT_NONE -1
@@ -33,6 +34,7 @@ class AlertLED {
          */
         static void tickCallback() {
             ALED_CFG anim;
+            float mult = GPS::isNight() ? 0.05 : 1;
 
             if (alertStatus == ALERT_NONE) {
                 if (!animPtr) return;
@@ -46,8 +48,8 @@ class AlertLED {
             if (animPtr >= sizeof(anim_warning[alertStatus])/sizeof(ALED_CFG)) animPtr = 0;
 
             memcpy_P(&anim, &anim_warning[alertStatus][animPtr], sizeof(ALED_CFG));
-            analogWrite(CFG_LED_ALERT1, anim.lft);
-            analogWrite(CFG_LED_ALERT2, anim.rgt);
+            analogWrite(CFG_LED_ALERT1, (anim.lft - 1023) * mult + 1023);
+            analogWrite(CFG_LED_ALERT2, (anim.rgt - 1023) * mult + 1023);
             analogWrite(CFG_BEEPER, anim.beeper);
             
             animPtr++;

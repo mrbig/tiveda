@@ -46,9 +46,15 @@ void GPS::parseRMC(String* msg) {
     float rawCoord, rawSpd, rawHdg;
     char rawIndicator;
 
-    while (fieldNr < 8) {
+    while (fieldNr < 9) {
         current = msg->substring(offset);
         switch (fieldNr) {
+            // UTC Time
+            case 0:
+                last.time = current.substring(0,2).toInt() * 60 + current.substring(2,4).toInt();
+                break;
+
+            // Status
             case 1:
                 old = reception;
                 if (current.charAt(0) == 'A') {
@@ -62,13 +68,13 @@ void GPS::parseRMC(String* msg) {
                 }
                 break;
 
-            case 2:
-            case 4:
+            case 2: // Latitude
+            case 4: // Longitude
                 rawCoord = current.toFloat();
                 break;
 
-            case 3:
-            case 5:
+            case 3: // N/S Indicator
+            case 5: // E/W Indicator
                 if (!rawCoord) break;
                 rawIndicator = current.charAt(0);
 
@@ -80,6 +86,7 @@ void GPS::parseRMC(String* msg) {
 
                 break;
 
+            // Speed Over Ground
             case 6:
                 if (current.indexOf(',') == 0) {
                     last.spd = -1;
@@ -88,12 +95,18 @@ void GPS::parseRMC(String* msg) {
                 last.spd = current.toFloat() * 1.852;
                 break;
 
+            // Course Over Ground
             case 7:
                 if (current.indexOf(',') == 0) {
                     last.hdg = -1;
                     break;
                 }
                 last.hdg = current.toFloat();
+
+            // Date
+            case 8:
+                last.day = current.substring(0, 2).toInt() + (current.substring(2, 4).toInt() - 1) * 30;
+                break;
         }
         
         offset = msg->indexOf(',', offset) + 1;
@@ -113,7 +126,20 @@ void GPS::parseRMC(String* msg) {
     Serial.println(last.spd);
     Serial.print("HDG: ");
     Serial.println(last.hdg);
+    Serial.print("Is night: ");
+    Serial.println(isNight());
 #endif
+}
+
+/**
+ * Returns true if we're after sunset
+ * @return boolean true when it's night at the moment
+ */
+boolean GPS::isNight() {
+    SUNINFO today;
+    if (last.day < 0 || last.day > 359) return false;
+    memcpy_P(&today, &sunrisemap[last.day], sizeof(SUNINFO));
+    return last.time < today.sunrise || today.sunset < last.time;
 }
 
 /**
