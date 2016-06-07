@@ -290,7 +290,7 @@ void checkPois(int eventCode, int eventParam) {
  * Perform OTA update
  */
 void performOTA() {
-    String url = String(F("http://sneaker.home/~mrbig/ota/?id=")) + String(ESP.getChipId(), HEX) + String(F("&board=")) + FPSTR(BVERSION);
+    String url = String(F("http://ota.sneaker.hu/?id=")) + String(ESP.getChipId(), HEX) + String(F("&board=")) + FPSTR(BVERSION);
     
     wifiConnecting = false;
     
