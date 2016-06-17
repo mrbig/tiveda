@@ -6,7 +6,7 @@
 #define BOARD_VERSION "b1"
 
 // Software version
-#define FW_VERSION "1.3"
+#define FW_VERSION "1.4"
 
 // Enable / disabled modules
 #define ENABLE_STATUSLED 1
