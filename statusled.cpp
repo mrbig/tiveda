@@ -44,7 +44,7 @@ void StatusLED::tick() {
         // Short pings when reception acquired
         if (pos == 0) analogWrite(CFG_LED_STATUS, GPS::isNight() ? 900 : 1);
         else analogWrite(CFG_LED_STATUS, 1023);
-        if (++pos >= 15) pos = 0;
+        if (++pos >= 150) pos = 0;
     }
 }
 
