@@ -42,10 +42,9 @@ void StatusLED::tick() {
         if (pos >= sizeof(animPulse) / 2) pos = 0;
     } else {
         // Short pings when reception acquired
-        analogWrite(CFG_LED_STATUS, 0);
-        if (pos == 0) digitalWrite(CFG_LED_STATUS, 0);
-        else digitalWrite(CFG_LED_STATUS, 1);
-        if (++pos >= 150) pos = 0;
+        if (pos == 0) analogWrite(CFG_LED_STATUS, GPS::isNight() ? 900 : 1);
+        else analogWrite(CFG_LED_STATUS, 1023);
+        if (++pos >= 15) pos = 0;
     }
 }
 

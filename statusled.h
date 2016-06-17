@@ -4,6 +4,7 @@
 #include "config.h"
 #include <EventManager.h>
 #include <Ticker.h>
+#include "gps.h"
 
 class StatusLED {
     public:
