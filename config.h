@@ -8,6 +8,8 @@
 // Software version
 #define FW_VERSION "1.4"
 
+#define INVERTED 1
+
 // Enable / disabled modules
 #define ENABLE_STATUSLED 1
 #define ENABLE_ALERTLED 1

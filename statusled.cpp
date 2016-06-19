@@ -37,13 +37,19 @@ void StatusLED::setStatus(byte state) {
 void StatusLED::tick() {
     if (!gpsStatus) {
         // Display sweep animation whene there is no reception
-        analogWrite(CFG_LED_STATUS, animPulse[pos]);
+        analogWrite(CFG_LED_STATUS, INVERTED ? 1023 - animPulse[pos] : animPulse[pos]);
         pos++;
         if (pos >= sizeof(animPulse) / 2) pos = 0;
     } else {
         // Short pings when reception acquired
-        if (pos == 0) analogWrite(CFG_LED_STATUS, GPS::isNight() ? 900 : 1);
-        else analogWrite(CFG_LED_STATUS, 1023);
+        if (pos == 0) {
+            if (GPS::isNight()) {
+                analogWrite(CFG_LED_STATUS, INVERTED ? 123 : 900);
+            } else {
+                analogWrite(CFG_LED_STATUS, INVERTED ? 1023 : 1);
+            }
+        }
+        else analogWrite(CFG_LED_STATUS, INVERTED ? 0 : 1023);
         if (++pos >= 150) pos = 0;
     }
 }

@@ -26,8 +26,8 @@ void AlertLED::init(EventManager* eventManager) {
     pinMode(CFG_LED_ALERT1, OUTPUT);
     pinMode(CFG_LED_ALERT2, OUTPUT);
     pinMode(CFG_BEEPER, OUTPUT);
-    digitalWrite(CFG_LED_ALERT1, 1);
-    digitalWrite(CFG_LED_ALERT2, 1);
+    digitalWrite(CFG_LED_ALERT1, 1 - INVERTED);
+    digitalWrite(CFG_LED_ALERT2, 1 - INVERTED);
     digitalWrite(CFG_BEEPER, 1);
     
     alertStatus = ALERT_NONE;
