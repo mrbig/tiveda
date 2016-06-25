@@ -6,9 +6,7 @@
 #define BOARD_VERSION "b1"
 
 // Software version
-#define FW_VERSION "1.4"
-
-#define INVERTED 1
+#define FW_VERSION "1.5"
 
 // Enable / disabled modules
 #define ENABLE_STATUSLED 1
@@ -24,6 +22,10 @@
 
 // GPIO port of the debug button
 #define CFG_BTN 0
+
+// GPIO ports connected when in inverted mode
+#define INVERT_OUT 5
+#define INVERT_IN 15
 
 // Tolerance in heading from the requiered in degress
 #define CFG_HDG_TOLERANCE 45

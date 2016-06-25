@@ -14,8 +14,9 @@ class StatusLED {
          * Register event handlers, and start timer
          * @param EventManager the event manager used for events
          */
-        static void init(EventManager* eventManager) {
+        static void init(EventManager* eventManager, bool inverted) {
             instance = new StatusLED();
+            instance->inverted = inverted;
 
             eventManager->addListener(GPS_STATUS_CHANGED, &StatusLED::statusChangedCallback);
         };
@@ -41,6 +42,9 @@ class StatusLED {
         
         // This is the singleton instance
         static StatusLED* instance;
+
+        // Should we work in inverted mode?
+        bool inverted = false;
 
         // Status of the gps
         byte gpsStatus = -1;

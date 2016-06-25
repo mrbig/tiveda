@@ -54,15 +54,25 @@ boolean inAlert = false;
 // This is set true while we're waiting for wifi
 boolean wifiConnecting = false;
 
+// Wether this board uses active high output for leds
+boolean inverted = false;
 /**
  * System initialization
  */
 void setup() {
     // Init serial communication
     Serial.begin(9600);
-    //Serial.setDebugOutput(true);
     serialBuffer.reserve(200);
     message.reserve(200);
+
+    inverted = isBoardInverted();
+#ifdef DEBUG
+    if (inverted) {
+        Serial.println("Board is inverted");
+    } else {
+        Serial.println("Board is normal");
+    }
+#endif
 
     // Setup PWM frequency
     analogWriteFreq(880);
@@ -84,10 +94,10 @@ void setup() {
 
     // Initialize output modules
 #ifdef ENABLE_STATUSLED
-    StatusLED::init(&eventManager);
+    StatusLED::init(&eventManager, inverted);
 #endif
 #ifdef ENABLE_ALERTLED
-    AlertLED::init(&eventManager);
+    AlertLED::init(&eventManager, inverted);
 #endif
 
     // First events
@@ -343,4 +353,34 @@ void performOTA() {
             break;
     }
  }
+
+
+/**
+ *  Check if the current board is inverted
+ *  D8 and D1 should be connected. We set D1 to various
+ *  states and check if D8 does match
+ *  
+ *  This method blocks for ~50ms
+ *  @return bool true if the board matches the criteria
+ */
+bool isBoardInverted() {
+    pinMode(INVERT_OUT, OUTPUT);
+    pinMode(INVERT_IN, INPUT);
+
+    digitalWrite(INVERT_OUT, HIGH);
+    delay(10);
+    if (digitalRead(INVERT_IN) != HIGH) return false;
+    digitalWrite(INVERT_OUT, LOW);
+    delay(10);
+    if (digitalRead(INVERT_IN) != LOW) return false;
+    digitalWrite(INVERT_OUT, HIGH);
+    delay(10);
+    if (digitalRead(INVERT_IN) != HIGH) return false;
+    digitalWrite(INVERT_OUT, LOW);
+    delay(10);
+    if (digitalRead(INVERT_IN) != LOW) return false;
+
+    pinMode(INVERT_OUT, INPUT);
+    return true;
+}
 
