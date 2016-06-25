@@ -46,7 +46,7 @@ POI* pois;
 uint32_t mapVersion;
 
 // Number of the pois
-uint8_t poiCount;
+uint16_t poiCount;
 
 // Set to true when we're in an alert
 boolean inAlert = false;
