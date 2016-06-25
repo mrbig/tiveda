@@ -26,8 +26,9 @@ class AlertLED {
         /**
          * Register event handlers, and start timer
          * @param EventManager the event manager used for events
+         * @param bool wether we should work in inverted mode
          */
-        static void init(EventManager* eventManager);
+        static void init(EventManager* eventManager, bool isInverted);
 
         /**
          * Progress the current animation
@@ -39,8 +40,8 @@ class AlertLED {
             if (alertStatus == ALERT_NONE) {
                 if (!animPtr) return;
                 animPtr = 0;
-                analogWrite(CFG_LED_ALERT1, 1023);
-                analogWrite(CFG_LED_ALERT2, 1023);
+                analogWrite(CFG_LED_ALERT1, inverted ? 0 : 1023);
+                analogWrite(CFG_LED_ALERT2, inverted ? 0 : 1023);
                 analogWrite(CFG_BEEPER, 1023);
                 return;
             }
@@ -48,8 +49,13 @@ class AlertLED {
             if (animPtr >= sizeof(anim_warning[alertStatus])/sizeof(ALED_CFG)) animPtr = 0;
 
             memcpy_P(&anim, &anim_warning[alertStatus][animPtr], sizeof(ALED_CFG));
-            analogWrite(CFG_LED_ALERT1, (anim.lft - 1023) * mult + 1023);
-            analogWrite(CFG_LED_ALERT2, (anim.rgt - 1023) * mult + 1023);
+            if (inverted) {
+                analogWrite(CFG_LED_ALERT1, (1024 -anim.lft) * mult);
+                analogWrite(CFG_LED_ALERT2, (1024 - anim.rgt) * mult);
+            } else {
+                analogWrite(CFG_LED_ALERT1, (anim.lft - 1023) * mult + 1023);
+                analogWrite(CFG_LED_ALERT2, (anim.rgt - 1023) * mult + 1023);
+            }
             analogWrite(CFG_BEEPER, anim.beeper);
             
             animPtr++;
@@ -71,6 +77,10 @@ class AlertLED {
         static void resetCallback(int eventCode, int eventParam);
 
     protected:
+        /**
+         * Should we work in inverted mode?
+         */
+        static bool inverted;
         /**
          * Set to the current alert status
          */

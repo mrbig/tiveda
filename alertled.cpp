@@ -18,16 +18,22 @@ uint16_t AlertLED::receptionCounter = 0;
 // Current reception status
 byte AlertLED::receptionStatus = 0;
 
+// Inverted mode
+bool AlertLED::inverted = false;
+
 /**
  * Register event handlers, and start timer
  * @param EventManager the event manager used for events
+ * @param bool wether we are in inverted mode.
  */
-void AlertLED::init(EventManager* eventManager) {
+void AlertLED::init(EventManager* eventManager, bool isInverted) {
+    inverted = isInverted;
+    
     pinMode(CFG_LED_ALERT1, OUTPUT);
     pinMode(CFG_LED_ALERT2, OUTPUT);
     pinMode(CFG_BEEPER, OUTPUT);
-    digitalWrite(CFG_LED_ALERT1, 1);
-    digitalWrite(CFG_LED_ALERT2, 1);
+    digitalWrite(CFG_LED_ALERT1, 1 - inverted);
+    digitalWrite(CFG_LED_ALERT2, 1 - inverted);
     digitalWrite(CFG_BEEPER, 1);
     
     alertStatus = ALERT_NONE;
