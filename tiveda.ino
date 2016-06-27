@@ -301,6 +301,11 @@ void checkPois(int eventCode, int eventParam) {
  */
 void performOTA() {
     String url = String(F("http://ota.sneaker.hu/?id=")) + String(ESP.getChipId(), HEX) + String(F("&board=")) + FPSTR(BVERSION);
+    if (inverted) {
+        url += "i";
+    } else {
+        url += "n";
+    }
     
     wifiConnecting = false;
     
