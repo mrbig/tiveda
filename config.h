@@ -13,19 +13,19 @@
 #define ENABLE_ALERTLED 1
 
 // GPIO port of the status led
-#define CFG_LED_STATUS 2
+#define CFG_LED_STATUS 2  // D4
 
 // GPIO port of the alert led
-#define CFG_LED_ALERT1 12
-#define CFG_LED_ALERT2 14
-#define CFG_BEEPER 4
+#define CFG_LED_ALERT1 12 // D6
+#define CFG_LED_ALERT2 14 // D5
+#define CFG_BEEPER 4      // D2
 
 // GPIO port of the debug button
 #define CFG_BTN 0
 
 // GPIO ports connected when in inverted mode
-#define INVERT_OUT 5
-#define INVERT_IN 15
+#define INVERT_OUT 5 // D1
+#define INVERT_IN 15 // D8
 
 // Tolerance in heading from the requiered in degress
 #define CFG_HDG_TOLERANCE 45
