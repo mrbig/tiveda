@@ -10,5 +10,6 @@ Arduino Event Manager
  * https://github.com/igormiktor/arduino-EventManager
 
 WiFiManager
- * asynchron version
+ * patchad asynchron version, wich can be found here:
  * https://github.com/mrbig/WiFiManager
+ * please use the f/non_blocking_api branch
