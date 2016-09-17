@@ -8,6 +8,19 @@
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>
 
+
+//*************************************************************************************
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <ESP_SSD1306.h>
+#define OLED_RESET  16  // Pin 15 -RESET digital signal
+ESP_SSD1306 display(OLED_RESET); // FOR I2C
+
+//*************************************************************************************
+
+
+
+
 #include "gps.h"
 #include "poi.h"
 
@@ -62,10 +75,17 @@ boolean inverted = false;
 void setup() {
     // Init serial communication
     Serial.begin(9600);
+    //*************************************************************************************
+    initDisplay();
+    //*************************************************************************************
+
+    delay(2000);
+
+
     serialBuffer.reserve(200);
     message.reserve(200);
 
-    inverted = isBoardInverted();
+    // inverted = isBoardInverted();
 #ifdef DEBUG
     if (inverted) {
         Serial.println("Board is inverted");
@@ -146,6 +166,29 @@ void loadMap() {
     Serial.println(fs_info.blockSize);
     Serial.print(F("PageSize: "));
     Serial.println(fs_info.pageSize);
+
+    //*************************************************************************************
+
+    display.clearDisplay();
+    display.setCursor(0, 0);
+    display.print(F("TotalBytes: "));
+    display.println(fs_info.totalBytes);
+    display.print(F("UsedBytes: "));
+    display.println(fs_info.usedBytes);
+    display.print(F("BlockSize: "));
+    display.println(fs_info.blockSize);
+    display.print(F("PageSize: "));
+    display.println(fs_info.pageSize);
+    display.display();
+    delay(2000);
+    display.clearDisplay();
+    display.setCursor(0, 0);
+    display.display();
+
+    //*************************************************************************************
+
+
+
 #endif
 
     File f;
@@ -162,6 +205,7 @@ void loadMap() {
     if (!f) {
 #ifdef DEBUG
         Serial.println("Map open failed");
+        display.println("Map open failed"); display.display();
         return;
 #endif
     }
@@ -171,6 +215,7 @@ void loadMap() {
     if (strncmp(buff, "POIS", 4)) {
 #ifdef DEBUG
         Serial.println("Invalid or corrupt map file");
+        display.println("Invalid or corrupt map file"); display.display();
         return;
 #endif
     }
@@ -181,6 +226,7 @@ void loadMap() {
 
 #ifdef DEBUG
     Serial.print("Loading map");
+    display.print("Loading map"); display.display();
 #endif
 
     pois = new POI[poiCount];
@@ -192,6 +238,7 @@ void loadMap() {
         if (rred != 8) {
 #ifdef DEBUG
             Serial.println("Short read, map might be corrupted");
+            display.println("Short read, map might be corrupted");
 #endif
             poiCount = i - 1;
             if (poiCount < 1) poiCount = 0;
@@ -200,13 +247,14 @@ void loadMap() {
         memcpy(&pois[i], buff, 8);
 
         pois[i].edges = new EDGE[pois[i].edgeCount];
-        
+
         // reading edges
         for (j=0; j<pois[i].edgeCount; j++) {
             rred = f.readBytes(buff, sizeof(EDGE));
             if (rred < sizeof(EDGE)) {
 #ifdef DEBUG
                 Serial.println("Short read, map might be corrupted");
+                display.println("Short read, map might be corrupted"); display.display();
 #endif
                 poiCount = i - 1;
                 if (poiCount < 1) poiCount = 0;
@@ -229,6 +277,31 @@ finish:
     Serial.print(poiCount);
     Serial.print(" pois, free heap: ");
     Serial.println(ESP.getFreeHeap());
+
+    //*************************************************************************************
+    display.clearDisplay();
+    display.setCursor(0, 0);
+    // display.clearDisplay();
+    // display.print("\n");
+
+    display.println("Map version: ");
+    display.setTextSize(2);
+    display.println(mapVersion, HEX);
+    display.setTextSize(1);
+    display.println("Loaded ");
+    display.setTextSize(2);
+    display.print(poiCount);
+    display.println(" pois");
+    display.setTextSize(1);
+    display.print("free heap: ");
+    display.println(ESP.getFreeHeap());
+    display.display();
+    delay(5000);
+    display.clearDisplay();
+    display.display();
+
+    //*************************************************************************************
+
 #endif
 
 }
@@ -281,6 +354,18 @@ void checkPois(int eventCode, int eventParam) {
 
         // We trigger this each time, becouse the speed varies
         eventManager.queueEvent(ALERT_TRIGGERED, current->spd - pois[i].limit);
+
+       //*************************************************************************************
+        display.setTextSize(2);
+        display.setCursor(35, 49);
+        // display.setTextColor(BLACK);
+        display.print(pois[i].limit); display.print("km/h");
+        //  display.setTextColor(WHITE);
+        display.display();
+        //*************************************************************************************
+
+
+
         alertFound = inAlert = true;
     }
     if (inAlert && !alertFound) {
@@ -316,6 +401,22 @@ void performOTA() {
     Serial.println(WiFi.localIP());
     
     Serial.print(F("Starting OTA..."));
+
+    //*************************************************************************************
+    display.setCursor(0, 0);
+    display.println("");
+    display.println(F("WiFi connected"));
+    display.println(F("IP address: "));
+    display.println(WiFi.localIP());
+    display.print(F("Starting OTA..."));
+    display.display();
+    delay(2000);
+    display.clearDisplay();
+    display.display();
+
+    //*************************************************************************************
+
+
 #endif
 
     // Update application code
@@ -324,6 +425,7 @@ void performOTA() {
 
 #ifdef DEBUG
     Serial.print(F("Updating map..."));
+    display.print(F("Updating map...")); display.display();
 #endif
     // Update application SPIFFS
     ret = ESPhttpUpdate.updateSpiffs(url, String(mapVersion, HEX));
@@ -337,7 +439,7 @@ void performOTA() {
 /**
  *  Parse errors from httpupdate
  */
- void checkErrors(t_httpUpdate_return ret) {
+void checkErrors(t_httpUpdate_return ret) {
     switch (ret) {
         case HTTP_UPDATE_FAILED:
 #ifdef DEBUG
@@ -348,16 +450,39 @@ void performOTA() {
         case HTTP_UPDATE_NO_UPDATES:
 #ifdef DEBUG
             Serial.println(F("no update found"));
+
+            //*************************************************************************************
+            display.clearDisplay();
+            display.setCursor(0, 0);
+            display.println(F("no update found"));
+            display.display();
+            delay(2000);
+            display.clearDisplay();
+            display.display();
+
+            //*************************************************************************************
+
 #endif
             break;
 
         case HTTP_UPDATE_OK:
 #ifdef DEBUG
             Serial.println(F("update successfull"));
+
+            //*************************************************************************************
+            display.setCursor(0, 0);
+            display.println(F("update successfull"));
+            display.display();
+            delay(2000);
+            display.clearDisplay();
+            display.display();
+
+            //*************************************************************************************
+
 #endif
             break;
     }
- }
+}
 
 
 /**

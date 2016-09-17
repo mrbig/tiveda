@@ -1,4 +1,11 @@
 #include "gps.h"
+#include "sat.h"
+
+
+int ora;
+String perc;
+String masodperc;
+String datum;
 
 // Pointer to the incoming serial message buffer
 String* GPS::message;
@@ -52,6 +59,12 @@ void GPS::parseRMC(String* msg) {
             // UTC Time
             case 0:
                 last.time = current.substring(0,2).toInt() * 60 + current.substring(2,4).toInt();
+                //*****************************************************************************
+                ora = current.substring(0, 2).toInt() + 1;
+                if (ora == 24) ora = 0;
+                perc = current.substring(2, 4) ;
+                masodperc = current.substring(4, 6) ;
+                //****************************************************************************
                 break;
 
             // Status
@@ -106,6 +119,7 @@ void GPS::parseRMC(String* msg) {
             // Date
             case 8:
                 last.day = current.substring(0, 2).toInt() + (current.substring(2, 4).toInt() - 1) * 30;
+                datum = current.substring(4, 6) + current.substring(2, 4) + current.substring(0, 2);
                 break;
         }
         
@@ -128,7 +142,79 @@ void GPS::parseRMC(String* msg) {
     Serial.println(last.hdg);
     Serial.print("Is night: ");
     Serial.println(isNight());
+    Serial.print("ido: ");
+    Serial.print(ora); Serial.print(":"); Serial.print(perc); Serial.print(":"); Serial.println(masodperc);
+    Serial.print(" last.day: ");
+    Serial.println(last.day);
+    Serial.print("Datum: ");
+    Serial.println(datum);
 #endif
+
+    //***********************************OLED**************************************************
+
+    display.setCursor(30, 25);
+    display.setTextSize(3);
+    display.fillRect(0, 0, 128, 64, BLACK);
+
+    if (last.spd > 0)
+    {
+        if (last.spd < 100)
+        {
+            display.print(" ");
+        }
+        if (last.spd < 10)
+        {
+            display.print(" ");
+        }
+
+        if (last.spd < 1)
+        {
+            display.println("0.0");
+        }
+        else
+        {
+            display.println(last.spd, 1);
+        }
+
+
+        if (perc != ",,")
+        {
+            if (datum.toInt() > 160327 && datum.toInt() < 161030) ora = ora + 1;
+            if (datum.toInt() > 170326 && datum.toInt() < 171029) ora = ora + 1;
+            if (datum.toInt() > 180325 && datum.toInt() < 181028) ora = ora + 1;
+            if (datum.toInt() > 190331 && datum.toInt() < 191027) ora = ora + 1;
+            if (datum.toInt() > 200329 && datum.toInt() < 201025) ora = ora + 1;
+            if (datum.toInt() > 210328 && datum.toInt() < 211031) ora = ora + 1;
+            if (datum.toInt() > 220327 && datum.toInt() < 221030) ora = ora + 1;
+            if (datum.toInt() > 230326 && datum.toInt() < 231029) ora = ora + 1;
+            if (datum.toInt() > 240331 && datum.toInt() < 241027) ora = ora + 1;
+            if (datum.toInt() > 250330 && datum.toInt() < 251026) ora = ora + 1;
+            if (datum.toInt() > 260327 && datum.toInt() < 261030) ora = ora + 1;
+            if (ora == 24) ora = 0;
+
+            display.setCursor(20, 0);
+            display.setTextSize(2);
+            //  display.fillRect(0, 0, 128, 30, BLACK);
+            if (ora < 10)  display.setCursor(25, 0);
+            display.print(ora); display.print(":"); display.print(perc); display.print(":"); display.println(masodperc);
+        }
+    }
+    else
+    {
+        display.setCursor(22, 0);
+        display.fillRect(0, 0, 128, 64, BLACK);
+        // display.clearDisplay();
+        display.setTextSize(1);
+        display.println("no GPS signal");
+        display.drawBitmap(40, 10, sat, 48, 48, WHITE);
+        display.display();
+    }
+
+    display.display();
+
+    //*************************************************************************************
+
+
 }
 
 /**
