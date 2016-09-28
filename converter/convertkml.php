@@ -18,6 +18,9 @@ foreach ($xml->Document->Folder as $folder) {
         if (empty($place->Polygon)) continue;
         
         $poi = parsePoly($place);
+        if (isset($folder_pois[$poi['n']])) {
+            die('Error: duplicate poi name '.$poi['n']."\n");
+        }
         $folder_pois[$poi['n']] = $poi;
     }
 
