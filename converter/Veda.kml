@@ -3,16 +3,43 @@
 <Document>
 	<name>Veda</name>
 	<open>1</open>
-	<StyleMap id="m_ylw-pushpin10">
+	<Style id="sn_ylw-pushpin8">
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin3">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin21</styleUrl>
+			<styleUrl>#s_ylw-pushpin30</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl2001</styleUrl>
 		</Pair>
 	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin70">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
 	<Style id="sn_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -25,336 +52,6 @@
 			<color>7f0000ff</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin000">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin10</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin5">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin1">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin20</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="poly-000000-1-77-highlight">
-		<LineStyle>
-			<color>ff000000</color>
-			<width>2</width>
-		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin6">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin70">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin6</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin5</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl3">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin20">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin00">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin00</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl0">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl1">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin10">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin1">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl40">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin60">
-		<LineStyle>
-			<color>ff000000</color>
-		</LineStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin700">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin30</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin30</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin3">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl20</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin4">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin01</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl4</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin4">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sh_ylw-pushpin3">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin50">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin0">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl2">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7f0000ff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin00">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin2">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<StyleMap id="m_ylw-pushpin5">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin2</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sh_ylw-pushpin6">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<width>3</width>
-		</LineStyle>
-	</Style>
-	<StyleMap id="msn_ylw-pushpin71">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin3</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin3</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>800000ff</color>
-		</PolyStyle>
-	</Style>
-	<StyleMap id="poly-000000-1-77">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#poly-000000-1-77-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#poly-000000-1-77-highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin2">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="sh_ylw-pushpin30">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -364,9 +61,49 @@
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
 		<PolyStyle>
-			<color>7fffffff</color>
+			<color>7f0000ff</color>
 		</PolyStyle>
 	</Style>
+	<Style id="s_ylw-pushpin_hl2000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin7</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="s_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -379,92 +116,15 @@
 			<color>7f0000ff</color>
 		</PolyStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="poly-000000-1-77-normal">
+	<Style id="line-000000-1-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
 		<LineStyle>
 			<color>ff000000</color>
 		</LineStyle>
-		<PolyStyle>
-			<color>4d000000</color>
-		</PolyStyle>
 	</Style>
-	<StyleMap id="line-000000-1-nodesc">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#line-000000-1-nodesc-normal</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#line-000000-1-nodesc-highlight</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="m_ylw-pushpin0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin1</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl40</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin01">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="sn_ylw-pushpin30">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<PolyStyle>
-			<color>7fffffff</color>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl200">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl4">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin_hl20">
+	<Style id="s_ylw-pushpin_hl3">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -484,11 +144,206 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
+		<PolyStyle>
+			<color>800000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl40</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin20">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin71">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin500">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2001">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="line-000000-1-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-000000-1-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-000000-1-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin70">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
 		<LineStyle>
 			<width>3</width>
 		</LineStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin">
+	<Style id="sh_ylw-pushpin4">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -500,16 +355,153 @@
 			<color>800000ff</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin7">
+	<Style id="sh_ylw-pushpin7">
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin01">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin10">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin7</styleUrl>
+			<styleUrl>#s_ylw-pushpin21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin50">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin72">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin70</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
 			<styleUrl>#sh_ylw-pushpin6</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="s_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl40">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin20</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin700">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
 	<Style id="line-000000-1-nodesc-highlight">
 		<BalloonStyle>
 			<text><![CDATA[<h3>$[name]</h3>]]></text>
@@ -519,9 +511,43 @@
 			<width>2</width>
 		</LineStyle>
 	</Style>
-	<Style id="s_ylw-pushpin_hl10">
+	<StyleMap id="msn_ylw-pushpin7000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin3">
 		<IconStyle>
 			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin2">
+		<IconStyle>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -544,10 +570,20 @@
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+			<styleUrl>#sh_ylw-pushpin40</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sh_ylw-pushpin4">
+	<StyleMap id="m_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin01</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin40">
 		<LineStyle>
 			<color>ff000000</color>
 			<width>2</width>
@@ -568,22 +604,54 @@
 			<color>7f0000ff</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin4</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="line-000000-1-nodesc-normal">
-		<BalloonStyle>
-			<text><![CDATA[<h3>$[name]</h3>]]></text>
-		</BalloonStyle>
+	<Style id="sn_ylw-pushpin60">
 		<LineStyle>
 			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin6">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
 		</LineStyle>
 	</Style>
 	<Folder>
@@ -670,8 +738,8 @@
 		</Placemark>
 		<Placemark>
 			<name>teszt</name>
-			<description>limit: 20</description>
-			<styleUrl>#poly-000000-1-77</styleUrl>
+			<description>limit: 50</description>
+			<styleUrl>#msn_ylw-pushpin7</styleUrl>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -756,10 +824,11 @@
 	</Folder>
 	<Folder>
 		<name>Baranya</name>
+		<open>1</open>
 		<Placemark>
 			<name>Szigetvar</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -774,7 +843,7 @@
 		<Placemark>
 			<name>Mecseknadasd</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -789,7 +858,7 @@
 		<Placemark>
 			<name>Szigetvar2</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -804,7 +873,7 @@
 		<Placemark>
 			<name>Sasd</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -819,13 +888,13 @@
 		<Placemark>
 			<name>Pecs</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#m_ylw-pushpin3</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							18.26435990813516,46.0835027426694,0 18.27578492832369,46.08736004460336,0 18.27560051915071,46.08767630880497,0 18.2640654583012,46.08387343029838,0 18.26435990813516,46.0835027426694,0 
+							18.27102775199539,46.08386073246292,0 18.27146909226427,46.08399981747109,0 18.27104783645473,46.0857354466773,0 18.27583607011524,46.08733817732516,0 18.27567651185935,46.08757937217933,0 18.27078667246342,46.08611155673949,0 18.27005157663603,46.0882224236868,0 18.26960774447588,46.08817657174524,0 18.27034969548787,46.08594559855941,0 18.2640654583012,46.08387343029838,0 18.26426912158902,46.08363456878108,0 18.2704880801007,46.08553327588985,0 18.27102775199539,46.08386073246292,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
@@ -834,7 +903,7 @@
 		<Placemark>
 			<name>Kozarmisleny</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin700</styleUrl>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1124,7 +1193,7 @@
 		<Placemark>
 			<name>Malyi</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1139,7 +1208,7 @@
 		<Placemark>
 			<name>Bukkabrany</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1154,7 +1223,7 @@
 		<Placemark>
 			<name>Edeleny</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1169,7 +1238,7 @@
 		<Placemark>
 			<name>Mezokereszt M3 bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1194,7 +1263,7 @@
 		<Placemark>
 			<name>Mezokereszt M3 jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1219,7 +1288,7 @@
 		<Placemark>
 			<name>Miskolc 26 del</name>
 			<description>limit: 60</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1244,7 +1313,7 @@
 		<Placemark>
 			<name>Miskolc 26 eszak</name>
 			<description>limit: 60</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1269,7 +1338,7 @@
 		<Placemark>
 			<name>Miskolc szp A</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1294,7 +1363,7 @@
 		<Placemark>
 			<name>Miskolc szp B</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1309,7 +1378,7 @@
 		<Placemark>
 			<name>Miskolc szp C</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1334,7 +1403,7 @@
 		<Placemark>
 			<name>Ozd</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1352,7 +1421,7 @@
 		<Placemark>
 			<name>Szeged 47</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1445,7 +1514,7 @@
 		<Placemark>
 			<name>Szekesfehervar M7 bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1470,7 +1539,7 @@
 		<Placemark>
 			<name>Szekesfehervar M7 jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1495,7 +1564,7 @@
 		<Placemark>
 			<name>Sored</name>
 			<description>limit: 60</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1510,7 +1579,7 @@
 		<Placemark>
 			<name>Aba</name>
 			<description>limit: 70</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1525,7 +1594,7 @@
 		<Placemark>
 			<name>Dunaujvaros</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1540,7 +1609,7 @@
 		<Placemark>
 			<name>Balatonbozsok</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1555,7 +1624,7 @@
 		<Placemark>
 			<name>Baracska</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1570,7 +1639,7 @@
 		<Placemark>
 			<name>Szekesfehervar</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1701,7 +1770,7 @@
 		<Placemark>
 			<name>Tepe</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1716,7 +1785,7 @@
 		<Placemark>
 			<name>Puspokladany</name>
 			<description>limit: 70</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1731,7 +1800,7 @@
 		<Placemark>
 			<name>Bocskaikert</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1746,7 +1815,7 @@
 		<Placemark>
 			<name>Debrecen 47</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1761,7 +1830,7 @@
 		<Placemark>
 			<name>Debrecen 35</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1776,7 +1845,7 @@
 		<Placemark>
 			<name>Debrecen 33</name>
 			<description>limit: 70</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1791,7 +1860,7 @@
 		<Placemark>
 			<name>Puspokladany 4</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<altitudeMode>relativeToGround</altitudeMode>
@@ -1808,7 +1877,7 @@
 		<Placemark>
 			<name>Berettyoujfalu</name>
 			<description>limit: 90</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1826,7 +1895,7 @@
 		<Placemark>
 			<name>Eger</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1841,7 +1910,7 @@
 		<Placemark>
 			<name>Kapolna</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1856,7 +1925,7 @@
 		<Placemark>
 			<name>Gyongyos</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1871,7 +1940,7 @@
 		<Placemark>
 			<name>Nagyfuged M3 jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1896,7 +1965,7 @@
 		<Placemark>
 			<name>Nagyfuged M3 bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1921,7 +1990,7 @@
 		<Placemark>
 			<name>Eger 24</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin70</styleUrl>
+			<styleUrl>#msn_ylw-pushpin700</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1939,7 +2008,7 @@
 		<Placemark>
 			<name>Szolnok</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1954,7 +2023,7 @@
 		<Placemark>
 			<name>Ocsod</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1967,9 +2036,9 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>Ocsod</name>
+			<name>Jaszbereny</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1984,7 +2053,7 @@
 		<Placemark>
 			<name>Jaszalsoszentgy</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -1999,7 +2068,7 @@
 		<Placemark>
 			<name>Torokszentmiklos</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2014,7 +2083,7 @@
 		<Placemark>
 			<name>Kunszentmarton</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2029,7 +2098,7 @@
 		<Placemark>
 			<name>Kunhegyes</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2044,7 +2113,7 @@
 		<Placemark>
 			<name>Karcag</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2062,7 +2131,7 @@
 		<Placemark>
 			<name>Nyergesujfalu</name>
 			<description>limit: 60</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2077,7 +2146,7 @@
 		<Placemark>
 			<name>Tata</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2092,7 +2161,7 @@
 		<Placemark>
 			<name>Tat</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2107,7 +2176,7 @@
 		<Placemark>
 			<name>Tatabanya</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2122,7 +2191,7 @@
 		<Placemark>
 			<name>Komarom</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2137,7 +2206,7 @@
 		<Placemark>
 			<name>Aszar</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2152,6 +2221,7 @@
 	</Folder>
 	<Folder>
 		<name>Nograd</name>
+		<open>1</open>
 		<Placemark>
 			<name>Matraterenye</name>
 			<description>limit: 50</description>
@@ -2277,7 +2347,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Dunakeszi</name>
-			<styleUrl>#msn_ylw-pushpin7</styleUrl>
+			<styleUrl>#msn_ylw-pushpin72</styleUrl>
 			<LineString>
 				<tessellate>1</tessellate>
 				<coordinates>
@@ -2307,7 +2377,7 @@
 		<Placemark>
 			<name>Kaposvar 67</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2320,7 +2390,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>Kaposvar 67</name>
+			<name>Kaposvar 610</name>
 			<description>limit: 50</description>
 			<styleUrl>#m_ylw-pushpin3</styleUrl>
 			<Polygon>
@@ -2337,7 +2407,7 @@
 		<Placemark>
 			<name>Balatonfoldvar</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2352,7 +2422,7 @@
 		<Placemark>
 			<name>Kethely</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2367,7 +2437,7 @@
 		<Placemark>
 			<name>Sagvar</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2382,7 +2452,7 @@
 		<Placemark>
 			<name>Visz</name>
 			<description>limit: 70</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2397,10 +2467,11 @@
 	</Folder>
 	<Folder>
 		<name>Szabolcs Szatmar Bereg</name>
+		<open>1</open>
 		<Placemark>
 			<name>Mateszalka</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2415,7 +2486,7 @@
 		<Placemark>
 			<name>Nyiregyhaza 36</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2430,7 +2501,7 @@
 		<Placemark>
 			<name>Nyiregyhaza 4</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2445,7 +2516,7 @@
 		<Placemark>
 			<name>Nyiregyhaza 4 - 2</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2460,7 +2531,7 @@
 		<Placemark>
 			<name>Nyiregyhaza M3 jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2485,7 +2556,7 @@
 		<Placemark>
 			<name>Nyiregyhaza M3 bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin3</styleUrl>
+			<styleUrl>#m_ylw-pushpin30</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2510,10 +2581,11 @@
 	</Folder>
 	<Folder>
 		<name>Tolna</name>
+		<open>1</open>
 		<Placemark>
 			<name>Dunafoldvar</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2534,7 +2606,7 @@
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							18.695417156014,46.31436796089135,0 18.69383014869717,46.30957796460893,0 18.6943225612968,46.31007990968031,0 18.69573775507206,46.31432123149318,0 18.695417156014,46.31436796089135,0 
+							18.69503934559603,46.31445456081857,0 18.69361344232598,46.30955473276774,0 18.69484638683499,46.31003899058424,0 18.69602974629936,46.31431889599395,0 18.69503934559603,46.31445456081857,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
@@ -2543,7 +2615,7 @@
 		<Placemark>
 			<name>Dombovar</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2558,7 +2630,7 @@
 		<Placemark>
 			<name>Bonyhad</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2573,7 +2645,7 @@
 		<Placemark>
 			<name>Nagydorog</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2588,7 +2660,7 @@
 		<Placemark>
 			<name>Hogyesz</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2606,7 +2678,7 @@
 		<Placemark>
 			<name>Sarvar</name>
 			<description>limit: 70</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2621,7 +2693,7 @@
 		<Placemark>
 			<name>Szombathely</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2636,7 +2708,7 @@
 		<Placemark>
 			<name>Vasszecseny</name>
 			<description>limit: 40</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2651,7 +2723,7 @@
 		<Placemark>
 			<name>Kald</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2666,7 +2738,7 @@
 		<Placemark>
 			<name>Kam</name>
 			<description>limit: 70</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2684,7 +2756,7 @@
 		<Placemark>
 			<name>Ajkarendek</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2699,7 +2771,7 @@
 		<Placemark>
 			<name>Nemesvita</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2714,7 +2786,7 @@
 		<Placemark>
 			<name>Balatonfured</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2729,7 +2801,7 @@
 		<Placemark>
 			<name>Epleny</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2744,7 +2816,7 @@
 		<Placemark>
 			<name>Balatonkenese</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2759,7 +2831,7 @@
 		<Placemark>
 			<name>Totvazsony</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2774,7 +2846,7 @@
 		<Placemark>
 			<name>Nyarad</name>
 			<description>limit: 60</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2789,7 +2861,7 @@
 		<Placemark>
 			<name>Papa</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2804,7 +2876,7 @@
 		<Placemark>
 			<name>Liter</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2819,7 +2891,7 @@
 		<Placemark>
 			<name>Sumeg</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2837,7 +2909,7 @@
 		<Placemark>
 			<name>Nagykanizsa</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2852,7 +2924,7 @@
 		<Placemark>
 			<name>Zalabaksa</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2867,7 +2939,7 @@
 		<Placemark>
 			<name>Zalaegerszeg</name>
 			<description>limit: 70</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2882,7 +2954,7 @@
 		<Placemark>
 			<name>Zalaszentbalazs</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2897,7 +2969,7 @@
 		<Placemark>
 			<name>Zalasarszeg</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2912,7 +2984,7 @@
 		<Placemark>
 			<name>Lenti</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2927,7 +2999,7 @@
 		<Placemark>
 			<name>Nova</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2942,7 +3014,7 @@
 		<Placemark>
 			<name>Vonyarcvashegy</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2957,7 +3029,7 @@
 		<Placemark>
 			<name>Zalaapati</name>
 			<description>limit: 50</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -2972,11 +3044,10 @@
 	</Folder>
 	<Folder>
 		<name>hagyomanyos</name>
-		<open>1</open>
 		<Placemark>
 			<name>M1 Maglod bal</name>
 			<description>limit: 110</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3001,7 +3072,7 @@
 		<Placemark>
 			<name>M1 Maglod jobb</name>
 			<description>limit: 110</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3026,7 +3097,7 @@
 		<Placemark>
 			<name>M1 Halasztelek</name>
 			<description>limit: 110</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3051,7 +3122,7 @@
 		<Placemark>
 			<name>M1 Erd bal</name>
 			<description>limit: 110</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3076,7 +3147,7 @@
 		<Placemark>
 			<name>M1 Erd jobb</name>
 			<description>limit: 90</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3101,7 +3172,7 @@
 		<Placemark>
 			<name>M1M7 bevezeto</name>
 			<description>limit: 100</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3126,7 +3197,7 @@
 		<Placemark>
 			<name>M1M7 kivezeto</name>
 			<description>limit: 100</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3151,7 +3222,7 @@
 		<Placemark>
 			<name>M1 outlet jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3176,7 +3247,7 @@
 		<Placemark>
 			<name>M1 outlet bal</name>
 			<description>limit: 100</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3201,7 +3272,7 @@
 		<Placemark>
 			<name>M1 Csabdi jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3226,7 +3297,7 @@
 		<Placemark>
 			<name>M1 Csabdi bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3251,7 +3322,7 @@
 		<Placemark>
 			<name>M1 Tata jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3276,7 +3347,7 @@
 		<Placemark>
 			<name>M1 Tata bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3301,7 +3372,7 @@
 		<Placemark>
 			<name>M1 Acs jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3326,7 +3397,7 @@
 		<Placemark>
 			<name>M1 Acs bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3351,7 +3422,7 @@
 		<Placemark>
 			<name>M1 Jegespuszta jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3376,7 +3447,7 @@
 		<Placemark>
 			<name>M1 Jegespuszta bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3401,7 +3472,7 @@
 		<Placemark>
 			<name>M1 Abda jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3426,7 +3497,7 @@
 		<Placemark>
 			<name>M1 Abda bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3451,7 +3522,7 @@
 		<Placemark>
 			<name>M1 Mosonmagyarovar jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3476,7 +3547,7 @@
 		<Placemark>
 			<name>M1 Mosonmagyarovar bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3501,7 +3572,7 @@
 		<Placemark>
 			<name>M1 Level bal</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3516,7 +3587,7 @@
 		<Placemark>
 			<name>M1 Level jobb</name>
 			<description>limit: 130</description>
-			<styleUrl>#m_ylw-pushpin50</styleUrl>
+			<styleUrl>#m_ylw-pushpin500</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3541,7 +3612,7 @@
 		<Placemark>
 			<name>Balatonszarszo</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3556,13 +3627,13 @@
 		<Placemark>
 			<name>Koroshegy eszak</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							17.89921327002961,46.83390861892477,0 17.90185367772733,46.82852558746779,0 17.90231367060778,46.82863043233922,0 17.90019117580908,46.83395010281176,0 17.89921327002961,46.83390861892477,0 
+							17.89921327002961,46.83390861892477,0 17.90185367772733,46.82852558746778,0 17.90231367060778,46.82863043233922,0 17.90019117580908,46.83395010281176,0 17.89921327002961,46.83390861892477,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
@@ -3571,7 +3642,7 @@
 		<Placemark>
 			<name>Koroshegy del</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3586,7 +3657,7 @@
 		<Placemark>
 			<name>Kaposvar</name>
 			<description>limit: 60</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3601,7 +3672,7 @@
 		<Placemark>
 			<name>Balatonfoldvar nyugat</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
@@ -3616,7 +3687,7 @@
 		<Placemark>
 			<name>Budapest, Rokahegyi ut</name>
 			<description>limit: 50</description>
-			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<styleUrl>#msn_ylw-pushpin70</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
