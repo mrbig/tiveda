@@ -243,11 +243,15 @@ void serialEvent() {
         char inChar = (char)Serial.read();
         serialBuffer += inChar;
 
-        if (inChar == '\n') {
-            message = serialBuffer;
-            serialBuffer = "";
+        if (inChar == '\n' || inChar == '\r') {
+            if (serialBuffer.length() <= 1) {
+                serialBuffer = "";
+            } else {
+                message = serialBuffer;
+                serialBuffer = "";
             
-            eventManager.queueEvent(GPS_MESSAGE_RECEIVED, 1);
+                eventManager.queueEvent(GPS_MESSAGE_RECEIVED, 1);
+            }
         }
     }
 }
