@@ -378,7 +378,7 @@ void checkPois(int eventCode, int eventParam) {
     Serial.print("us ");
     Serial.print("Free heep: ");
     Serial.println(ESP.getFreeHeap());
-#endif;
+#endif
 }
 
 /**
@@ -444,7 +444,7 @@ void checkErrors(t_httpUpdate_return ret) {
         case HTTP_UPDATE_FAILED:
 #ifdef DEBUG
             Serial.printf("HTTP_UPDATE_FAILD Error (%d): %s", ESPhttpUpdate.getLastError(), ESPhttpUpdate.getLastErrorString().c_str());
-#endif;
+#endif
             break;
 
         case HTTP_UPDATE_NO_UPDATES:
