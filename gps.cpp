@@ -1,6 +1,8 @@
+#include <ESP_SSD1306.h>
 #include "gps.h"
 #include "sat.h"
 
+extern ESP_SSD1306 display; // FOR I2C
 
 int ora;
 String perc;

@@ -494,6 +494,7 @@ void checkErrors(t_httpUpdate_return ret) {
  *  @return bool true if the board matches the criteria
  */
 bool isBoardInverted() {
+#ifdef INVERT_OUT
     pinMode(INVERT_OUT, OUTPUT);
     pinMode(INVERT_IN, INPUT);
 
@@ -512,5 +513,8 @@ bool isBoardInverted() {
 
     pinMode(INVERT_OUT, INPUT);
     return true;
+#else
+    return false;
+#endif
 }
 

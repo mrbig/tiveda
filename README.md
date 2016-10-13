@@ -13,3 +13,9 @@ WiFiManager
  * patchad asynchron version, wich can be found here:
  * https://github.com/mrbig/WiFiManager
  * please use the f/non_blocking_api branch
+
+Adafruit GFX Library
+ * Use the arduino library manager to downloat this
+
+ESP_SSD1306
+ * https://github.com/somhi/ESP_SSD1306.git
